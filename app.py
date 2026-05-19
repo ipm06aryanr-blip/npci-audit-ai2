@@ -1,3 +1,4 @@
+# deployment refresh
 import streamlit as st
 import chromadb
 from sentence_transformers import SentenceTransformer
@@ -12,7 +13,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# -----------------------------------
+# -----------------------------------s
 # GROQ CLIENT
 # -----------------------------------
 
@@ -20,10 +21,7 @@ import streamlit as st
 import chromadb
 from sentence_transformers import SentenceTransformer
 from groq import Groq
-from dotenv import load_dotenv
-import os
 
-load_dotenv()
 
 client = Groq(
     api_key=st.secrets["GROQ_API_KEY"])

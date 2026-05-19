@@ -3,6 +3,7 @@ import chromadb
 from sentence_transformers import SentenceTransformer
 from groq import Groq
 import os
+import shutil
 
 # ---------------------------------------------------
 # PAGE CONFIG
@@ -36,13 +37,13 @@ domain = st.sidebar.selectbox(
         "Fraud Monitoring",
         "Cybersecurity",
         "BBPS",
-        "PPI"
+        "PPI",
+        "KYC",
+        "Cashback"
     ]
 )
 
 st.sidebar.markdown("---")
-
-st.sidebar.subheader("Retrieval Engine")
 
 st.sidebar.success(
     "Hybrid Retrieval Enabled"
@@ -70,6 +71,20 @@ def load_embedding_model():
     )
 
 embedding_model = load_embedding_model()
+
+# ---------------------------------------------------
+# RESET DATABASE BUTTON
+# ---------------------------------------------------
+
+if st.sidebar.button("Rebuild Database"):
+
+    if os.path.exists("db"):
+
+        shutil.rmtree("db")
+
+    st.sidebar.success(
+        "Database deleted. Refresh app."
+    )
 
 # ---------------------------------------------------
 # LOAD COLLECTION
@@ -139,12 +154,39 @@ def load_collection():
 
                     if len(text.strip()) > 50:
 
+                        filename_lower = file.lower()
+
+                        topic = "General"
+
+                        if "kyc" in filename_lower:
+                            topic = "KYC"
+
+                        elif "cashback" in filename_lower:
+                            topic = "Cashback"
+
+                        elif "microatm" in filename_lower:
+                            topic = "MicroATM"
+
+                        elif "fraud" in filename_lower:
+                            topic = "Fraud Monitoring"
+
+                        elif "tpap" in filename_lower:
+                            topic = "TPAP"
+
+                        elif "mapper" in filename_lower:
+                            topic = "UPI Mapper"
+
+                        elif "upi" in filename_lower:
+                            topic = "UPI"
+
                         circular_name = file.replace(
                             ".txt",
                             ""
                         )
 
                         structured_text = f"""
+TOPIC: {topic}
+
 CIRCULAR: {circular_name}
 
 SOURCE FILE: {file}
@@ -197,7 +239,7 @@ collection = load_collection()
 
 query = st.text_input(
     "Enter Audit Control",
-    placeholder="Example: UPI mapper verification"
+    placeholder="Example: KYC, Cashback regulation, UPI Mapper"
 )
 
 search = st.button("Search")
@@ -210,19 +252,15 @@ if search and query:
 
     with st.spinner("Searching regulations..."):
 
-        # ---------------------------------------------------
-        # GET ALL DOCS
-        # ---------------------------------------------------
-
         all_docs = collection.get()
-
-        # ---------------------------------------------------
-        # KEYWORD FILTERING
-        # ---------------------------------------------------
 
         filtered_docs = []
 
         query_words = query.lower().split()
+
+        # ---------------------------------------------------
+        # KEYWORD FILTERING
+        # ---------------------------------------------------
 
         for doc in all_docs["documents"]:
 
@@ -230,24 +268,30 @@ if search and query:
 
             doc_lower = doc.lower()
 
+            # strong topic boost
+            if query.lower() in doc_lower:
+                score += 5
+
             for word in query_words:
 
                 if word in doc_lower:
-
                     score += 1
 
-            # stricter keyword filtering
-            if score >= 2:
+            if score >= 1:
 
                 filtered_docs.append(doc)
 
         # ---------------------------------------------------
-        # FALLBACK
+        # NO MATCH FOUND
         # ---------------------------------------------------
 
         if len(filtered_docs) == 0:
 
-            filtered_docs = all_docs["documents"][:10]
+            st.error(
+                "No relevant regulatory circular found."
+            )
+
+            st.stop()
 
         # ---------------------------------------------------
         # SEMANTIC RANKING
@@ -293,10 +337,12 @@ if search and query:
         ]
 
         # ---------------------------------------------------
-        # DEBUG
+        # SHOW RETRIEVED CLAUSES
         # ---------------------------------------------------
 
-        st.subheader("Retrieved Regulatory Clauses")
+        st.subheader(
+            "Retrieved Regulatory Clauses"
+        )
 
         for i, doc in enumerate(documents):
 
@@ -389,6 +435,8 @@ FORMAT:
         "Relevant regulations identified"
     )
 
-    st.subheader("AI Audit Response")
+    st.subheader(
+        "AI Audit Response"
+    )
 
     st.markdown(answer)

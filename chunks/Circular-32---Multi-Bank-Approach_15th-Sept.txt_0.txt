@@ -1,0 +1,21 @@
+NPCI /UPI/OC No. 32/2017-18 
+ 
+ 
+ 
+ 
+            15th September 2017 
+To, 
+All Member Banks - Unified Payments Interface (UPI) 
+Dear Sir/Madam, 
+Subject: Unified Payment Interface: Multiple bank model (API Approach) 
+ 
+This circular enables multi-bank PSP model, in which a large merchant/tech player (referred as 
+“third party app provider”) having an access to large customer base, can connect to UPI system 
+through multiple PSP banks. In the multi-bank API arrangement, NPCI shall provide the NPCI 
+Common Library (CL) directly for integration to the third party app provider on behalf of PSP 
+banks. The App connects to PSP bank systems through third party app provider‟s system using API 
+on secure channel.   
+For initiation, the third party app provider needs to write to NPCI with the names of participating 
+banks (up to maximum of 5 banks). The letter should also include the details of existing user base 
+and volume commitment.  
+The participating banks must note the following:

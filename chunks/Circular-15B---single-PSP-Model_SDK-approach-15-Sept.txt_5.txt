@@ -1,0 +1,18 @@
+UPI procedural guidelines and RBI customer service guidelines issued time to 
+time. 
+10. The call centre number (toll free number in India) must be prominently 
+displayed on the app for customer service. 
+11. PSP Bank should ensure that all UPI customers could participate to use this app 
+& choose any bank account from the list of Banks available on UPI platform. 
+12. PSP Bank shall ensure that third party app provider shall require an exclusive 
+permission from NPCI & PSP bank for sharing individual UPI transaction data and 
+UPI related customer details with any other third party including its own Parent, 
+subsidiaries and subsidiaries of parents other than entities such as - Indian 
+Government/Indian 
+intelligence/Indian 
+law 
+enforcement 
+agencies/Indian 
+regulatory bodies. 
+13. PSP Bank shall ensure that the third party app provider shall take explicit 
+customer consent for using transaction data for themselves and/or PSP bank for

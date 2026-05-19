@@ -1,0 +1,50 @@
+security and usage by the PSP/3rd party Apps: 
+ 
+Sr. 
+UPI Circular # reference: 
+Quote 
+1 
+NCI/UPI/OC No. 15/2016-17  
+Dated: 18th of January 2017 
+ 
+Point 6.c).h 
+The PSP Bank should not share any customer data 
+with 
+merchant 
+unless 
+specified 
+by 
+industry 
+regulator for e.g. SEBI, IRDA for brokers, mutual 
+funds and Insurance. 
+2 
+NCI/UPI/OC No. 15A/2016-17  
+Dated: 27th of January 2017 
+ 
+Point 10 
+PSP Bank is not sharing any customer data with the 
+merchant/P2P provider unless specified by industry 
+regulator. E.g. SEBI, IRDA etc. (permitted only for 
+specific regulated merchants). No authentication 
+data shared outside PSP Bank. 
+3 
+NCI/UPI/OC No. 32/2017-18  
+Dated: 15th of September 2017 
+ 
+Point A. (Sub pint 2) 
+ 
+ 
+& 
+ 
+NCI/UPI/OC No. 15A/2017-18  
+Dated: 15th of September 2017 
+ 
+Sub point b) 
+ 
+ 
+ 
+ 
+Storing customer data by app provider systems in 
+Multi-bank model: We classify the data into two 
+types, namely “Customer data” and “Customer 
+payment sensitive data”:

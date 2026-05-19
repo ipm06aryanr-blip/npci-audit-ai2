@@ -1,0 +1,31 @@
+NPCI/UPI/OC No. 206A/2024-25 
+ 
+ 
+ 
+                                            Mar 12, 2025 
+ 
+To, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+All Members of Unified Payments Interface (UPI) 
+ 
+Subject: Addendum to OC 206 Implementation of Generic Good Faith Debit Adjustments in 
+URCS 
+ 
+Reference may be taken from UPI operating circular vide NPCI/UPI/OC No. 206 dated 3rd Sep 2024. 
+please note, this circular OC-206A supersedes our OC-206 dated 3rd Sep for BGGD only, as we have 
+improvised and simplified the process for claiming the offline IPO/Mandate with block functionality 
+executions and process is as follows, 
+Currently, sponsor/acquiring banks are sending all IPO/Mandate with block functionality executions 
+through email to NPCI for passing adjustment entries through back-office system. We have made 
+provision for processing of such exceptional such execution through which sponsor/acquiring banks 
+can directly manage through UPI back-office system (URCS – UPI Real Time Clearing System) without

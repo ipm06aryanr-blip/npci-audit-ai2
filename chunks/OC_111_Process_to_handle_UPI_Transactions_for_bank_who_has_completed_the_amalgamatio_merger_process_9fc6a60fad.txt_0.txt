@@ -1,0 +1,30 @@
+I 
+/ 
+' 
+'\ 
+N~
+U~
+2020-21/~ 
+N?C/1 
+'J1ffiftzl 
+prc,Ff 
+NATIONAL PAYMENTS CORPORATION OF IND/A 
+June 07, 2021 
+To, 
+\ 
+) 
+All Mem~Jrs of Unified Payments Interface (UPI) 
+Maf 
+Dear Sir, 
+Subject: Process t handle UPI Transactions for banks who has completed the amalgamation/ 
+/' 
+. 
+merge process 
+· 
+In case of '1ustomer of any bank can on board themselves on any UPI enabled App of any PSP 
+Banks, T~Ps etc. In case of merged banks, the customers shall use the revised_account details in 
+order j6 process UPI transactions. In UPI system, once the merger process 1s completed, the 
+bank.s' which cease to exist shall be off-boarded from the UPI system. 
+ere shall be customers who have registered themselves before merger activity and hence in 
+the PSP database, old account number and IFS codes shall be present. In such cases, transaction 
+request with old account details at Payer/Payee PSP (in case of Pay, Payer PSP initiates the

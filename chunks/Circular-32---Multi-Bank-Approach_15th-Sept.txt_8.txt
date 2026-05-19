@@ -1,0 +1,13 @@
+version with significant UPI related changes shall go live without a formal assessment 
+and approval, excluding minor changes and bug fixes. Any major change can be 
+qualified as major functionality change in UPI offering OR security related change that 
+shall require audit and be governed basis the arrangement between PSP Bank & third 
+party app provider. 
+17. PSP Bank and/or third party app provide shall not route any interbank transactions 
+within themselves. 
+18. PSP Bank shall ensure that the details of beneficiary customer such as account number 
+and CBS name shall not be used by third party app provider other than for transaction 
+processing.  
+19. For instances wherein the third party app provider‟s data resides outside the country, 
+either the SOC 2 compliance audit report or a reputed third party auditor‟s report as 
+per scope defined by NPCI and banks needs to be submitted to NPCI and PSP banks.

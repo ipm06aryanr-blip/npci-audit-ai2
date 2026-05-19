@@ -1,0 +1,17 @@
+approving the request, Rs XXX will be debited from your account” 
+ 
+Where,  
+ 
+Verified Name is the CBS verified name of the requestor 
+ 
+“Payer PSP” refers to the app which the payer is using and will initiate the SMS 
+ 
+XXX will be the amount which has been requested.  
+ 
+2. Masking of account number  
+ 
+All PSP’s need to mask the account number of the customer within the app and all 
+communication in the form of notification & SMS.  
+ 
+If the account number is 123456789, the PSP’s will display account number as 
+XXXXX6789 in all communication towards the customer.

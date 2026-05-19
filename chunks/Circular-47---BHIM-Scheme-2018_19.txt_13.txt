@@ -1,0 +1,20 @@
+bank has not done the necessary changes in their own UPI App, even then the merchant 
+acquired by the bank will be eligible for receiving cashback i.e. XYZ bank UPI App has 
+acquired ABC merchant. XYZ UPI App has not done the changes to their UPI XYZ App even 
+then ABC merchant using XYZ UPI App is eligible for the cashback. All merchants with valid 
+P2M transaction shall be considered. 
+ 
+Incentive shall be calculated for calendar month. 
+ 
+Incentive processing for this shall be done monthly. 
+ 
+Incentive pay-out shall be done by 10th of every month for previous month. 
+ 
+Incentive shall be paid for transactions number >= 5, minimum transaction amount of Rs. 25, 
+incentive of 10% of transaction value with cap of Rs. 50 per transaction incentive and overall 
+incentive of up to Rs. 1000. 
+ 
+• 
+It is not necessary that the transactions are received from the unique customers for BHIM UPI 
+Bank merchants to receive incentive/cashback. 
+•

@@ -1,0 +1,23 @@
+NPCI/ UPI/ OC No. 37/ 2017-18 
+ 
+ 
+ 
+ 
+            1st November 2017 
+ 
+To, 
+All Member Banks - Unified Payments Interface (UPI) 
+ 
+Dear Sir/Madam, 
+Subject: Bank PSP apps and third party apps Compliance to UPI Deep linking Specs 1.5.1 
+ 
+This is with reference to compliance to UPI OC 18 “Bank compliances to enable UPI Merchant 
+ecosystem”, issued on 20th March 2017 and “UPI Deep linking Specs 1.5.1”. It is observed that many 
+Bank PSP apps and third party apps live in the ecosystem today, are failing to comply with UPI Deep 
+Linking Specs 1.5.1. As a result, PSP apps and third party apps scanning the QR or responding to 
+intent are failing to pass the critical parameters populated by the merchants in the QR/ Intent 
+strings. 
+The challenges faced with such non-compliant apps is discouraging merchants to adopt UPI for 
+payments. The Banks are therefore requested to ensure compliance to UPI Deep Linking Specs 1.5.1 
+latest by 30th Nov’2017. 
+Members are requested for compliance.

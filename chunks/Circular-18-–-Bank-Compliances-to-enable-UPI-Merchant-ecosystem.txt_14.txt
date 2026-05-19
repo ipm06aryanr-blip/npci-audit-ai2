@@ -1,0 +1,5 @@
+merchant/ PSP provider application (As mentioned in Circular 15A) 
+iv. Bank Assurance letter with the following; 
+ Accuracy and completeness of scope coverage and compliances to findings 
+of security audit report. (As mentioned in Circular 15A) 
+ Merchant details: Merchant name, App ID, Payee vpa, MCC

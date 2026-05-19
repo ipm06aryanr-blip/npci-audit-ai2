@@ -1,0 +1,33 @@
+NPCI /UPI/OC No. 35 /2017-18 
+ 
+ 
+ 
+ 
+ 
+October 11, 2017 
+ 
+ 
+To, 
+ 
+All Member Banks - Unified Payments Interface (UPI) 
+ 
+Dear Sir/Madam, 
+ 
+ 
+Subject:  Guidelines for positioning of UPI/BHIM logo as payment mode at merchant location  
+               (offline and online)  
+  
+Merchant websites, apps or any other channel normally have multiple payment options 
+including UPI. It is critical to have proper display of the acceptance brand of BHIM/UPI to create 
+network effect and eliminate any confusion due to multiple brand displays for the UPI 
+acceptance.  
+ 
+In consultation with the steering committee following has been decided:  
+ 
+ 
+In terms of placement of UPI/BHIM option at the merchant check-out, BHIM/UPI shall 
+be placed prominently with priority & preferably above any other BHIM/UPI or UPI 
+enabled container/aggregator payment options. Any BHIM/UPI user shall be able to 
+make payment under this option, using either collect or intent mode. 
+ 
+

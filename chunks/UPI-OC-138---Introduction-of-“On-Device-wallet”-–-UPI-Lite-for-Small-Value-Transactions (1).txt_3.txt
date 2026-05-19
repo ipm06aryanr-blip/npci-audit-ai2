@@ -1,0 +1,12 @@
+will be processed online in the User’s bank account maintained in the bank’s core banking system. The upper 
+limit of an UPI Lite payment transaction shall be ₹200/-.The total limit of UPI Lite balance for an “On-device 
+wallet” shall be ₹2,000/- at any point of time. Replenishment of funds in UPI Lite shall only be allowed in online 
+mode with additional factor authentication (AFA) or using UPI AutoPay which has been registered by the User 
+in online mode with AFA. 
+UPI Lite offers the following advantages to the UPI ecosystem: 
+1. Superior user experience using faster near real-time small value payments 
+2. Uncluttered bank statement for the User. 
+3. Reduction of load on core banking system of the member bank.  
+User experience on UPI Lite: 
+1. The UPI Lite balance shall be non-interest bearing.  
+2. The UPI Lite transactions shall be offered without AFA i.e. UPI PIN. However, it is recommended that the

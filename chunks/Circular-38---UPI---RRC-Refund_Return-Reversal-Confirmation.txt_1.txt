@@ -1,0 +1,15 @@
+Committee Meeting (SCM) held on 12th May 2017. After detailed deliberation, SCM has 
+approved implementing the below defined process i.e. “Refund/Return Reversal 
+Confirmation – RRC” in RGCS for credit adjustments & returns by the customer banks. 
+ 
+Process:  
+ 
+Customer banks (Remitting/Issuing Banks should download all the credit adjustments 
+(received for approved transactions) & returns (received for deemed approved transactions) 
+which are raised by the beneficiary/acquiring banks in RGCS on T+1 working day and initiate 
+credits to the respective customers in CBS. Please check and ensure there is a debit present 
+in CBS before processing the reversal credit to the customer account. 
+ 
+Once the reversals are successfully processed in CBS, only then the customer banks should 
+confirm the status in RGCS with status as RRC adjustment flag and reason code 501 (please 
+refer below RRC rules table for more details).

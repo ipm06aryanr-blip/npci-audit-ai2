@@ -1,0 +1,27 @@
+1001A, B wing, 10th Floor, The Capital, Bandra-Kurla Complex, Bandra (East), Mumbai - 400 051 
+CIN: U74990MH2008NPL189067 
+ 
+ 
+NPCI /UPI/OC No.57 /2018-19 
+ 
+ 
+ 
+ 
+ 
+25th July, 2018 
+ 
+To, 
+All Member Banks - Unified Payments Interface (UPI) 
+Dear Sir/Madam 
+Subject: Changes in PSP & Customer communication to prevent fraudulent 
+transactions 
+ 
+Basis the directives from UPI/IMPS Steering Committee Meeting held on 5th July’18, a 
+working group was formed to discuss matters related to risk mitigation. This meeting took 
+place on 19th July’18 
+NPCI presented details with respect to risk perspectives, possibilities & mitigations thereto 
+were discussed & deliberated by the working group. This committee broadly came up with 
+the following recommendations in order to contain risk against the points mentioned 
+hereunder:-  
+1. Standardization of SMS sent to customers for a collect request: - It was 
+proposed that the PSP’s will adopt a standardized SMS format (Refer Annexure I)

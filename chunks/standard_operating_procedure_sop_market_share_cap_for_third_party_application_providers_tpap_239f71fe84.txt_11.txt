@@ -1,0 +1,25 @@
+8. NPCI may also deal with outliers coming due to minor fluctuations and also by computing 
+the quarterly average if the need arises.  
+ 
+9. The new customer shall be identified by the new device binding initiation request by the 
+TPAP to the PSP. If an existing user making a device binding request for any reason 
+(including change of phone, upgrade of app, creation of a secondary/back up handle on 
+same TPAP etc.), it shall be not considered as new customer and shall be allowed to on-
+board irrespectively. 
+ 
+   
+ 
+ 
+ 
+   
+ 
+ 
+V1.0 
+5/9 
+  
+10. Moderated On-boarding shall mean accepting or allowing upto 50% of the total customer 
+on-boarding requests (Previous 3 months from the month of calculation) for the concerned 
+TPAP. NPCI will review the action plan submitted by TPAP and their PSP Bank. If found 
+satisfactory then it will allow the appropriate moderated on-boarding. NPCI may get this 
+verified as and when needed. 
+Market Share Cap for TPAP in UPI

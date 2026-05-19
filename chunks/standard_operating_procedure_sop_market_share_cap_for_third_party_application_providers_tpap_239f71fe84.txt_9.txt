@@ -1,0 +1,16 @@
+transactions and TPAP UPI Transactions. 
+ 
+4. ‘Total Volume of the TPAP’ or ‘Volume Cap’ shall be calculated basis the Payer TPAP 
+logic, i.e., the financial transaction shall be attributed to the participant in UPI on the 
+payer’s side. 
+ 
+E.g. A merchant initiating a collect request through a UPI app with handle @abc to a 
+customer with handle @xyz. For a successful financial transaction, the transaction count 
+shall be attributed to the payer app of the customer i.e. @xyz, the transactions where the 
+TPAP act as payer for the financial leg of transactions (including mandates), shall be 
+included in the total volume of that TPAP. 
+ 
+5. ‘Pre-approved B2C and B2B transaction’ shall mean those credit transactions which 
+are of the nature of a merchant or customer cashback / reward, merchant settlements, 
+corporate disbursements, vendor payments, refunds and any financial incentive as may 
+be provided by a TPAP to its user. Pre-approved B2C and B2B transaction shall not be

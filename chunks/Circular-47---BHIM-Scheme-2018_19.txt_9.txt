@@ -1,0 +1,22 @@
+potentially earn upto Rs. 750 ( Rs. 500 for incentive on unique transactions + Rs. 250 for 
+volume incentive for transactions above 100) 
+ 
+The transactions done for above – if eligible shall be counted for both the components – for 
+e.g. if any user does 25 unique transactions of Rs. 100 each , shall be entitled to receive 
+incentive of Rs. 600 ( Rs. 500 for unique user + Rs. 100 for volume based incentive)  
+ 
+Further, in case a single user using BHIM, and any other BHIM UPI APP of the Bank with same 
+credentials (mobile number & account number + IFSC ) , incentive shall be paid by combining 
+transactions done for both the apps ( if qualifies ) .  
+ 
+Incentive shall be calculated for calendar month. 
+ 
+Incentive processing for this shall be done monthly. 
+ 
+Incentive pay-out shall be done by 10th of every month for previous month. 
+ 
+Component 3- Incentive for BHIM Merchant 
+ 
+ 
+This incentive is only for BHIM app users. 
+

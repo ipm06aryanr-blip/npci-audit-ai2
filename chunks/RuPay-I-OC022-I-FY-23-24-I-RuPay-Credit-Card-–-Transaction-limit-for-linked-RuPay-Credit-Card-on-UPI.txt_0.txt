@@ -1,0 +1,33 @@
+1001A, The Capital, B Wing, 10th Floor,   
+Bandra Kurla Complex, Bandra (E), Mumbai 400 051. 
+T: +91 22 40009100 F: +91 22 40009101  
+contact@npci.org.inwww.npci.org.in   
+CIN: U74990MH2008NPL189067   
+ 
+NPCI/2023-24/RuPay/022  
+ 
+ 
+ 
+ 
+                       16th November 2023 
+ 
+ 
+ 
+ 
+ 
+ 
+                       
+To, 
+All Members – RuPay & UPI 
+ 
+Dear Sir/Madam, 
+Subject: Transaction limit for linked RuPay Credit Card on UPI 
+  
+Since the launch of RuPay Credit Card on UPI in Sept’22, it has gained high traction and growth 
+in terms of volume and value. To further enhance customer experience and enable customers to 
+carry out high value transactions on e-commerce, travel bookings (flight, hotel), health care 
+services, educational institutes, etc., the below enhancement shall take place: 
+The limit for RuPay Credit Card on UPI transactions shall be the lowest of the following: 
+i. 
+RuPay Credit Card limit set by the issuer 
+ii.

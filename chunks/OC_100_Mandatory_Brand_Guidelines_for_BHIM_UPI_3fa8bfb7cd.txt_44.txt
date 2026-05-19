@@ -1,0 +1,39 @@
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+1 2 3 4 5 6 7 8 9 0
+Helvetica - Light Oblique
+66
+AUTOPAY
+AUTOPAY
+AUTOPAY
+AUTOPAY
+AUTOPAY
+AUTOPAY
+Improper  Usage
+The unit needs to be properly used as stated in the 
+previous slides. Usage of any other mnemonic, icon, 
+visual or graphic element even for representational 
+purposes are strictly prohibited. Here are some 
+representation examples of how not to use the unit. 
+AUTOPAY
+67
+UPI AUTOPAY Registration – Collect Flow
+Guidelines for positioning of UPI/BHIM logo as payment mode at merchant location (offline and online)
+Refer - UPI Circular no. NPCI /UPI/OC No. 35 /2017-18 dated October 11, 2017 
+68
+Payment option
+10:10
+Electricity Bill Payments
+LOGO
+10:10
+Payment mode
+Select UPI
+as the payment mode
+Initiating recurring payment
+request for merchant service
+LOGO
+Debit Card
+Credit Card
+Netbanking 
+Pay now
+Initiating recurring payment request on merchant’s interface 
+by selecting ‘Setup UPI AUTOPAY payment’ option under

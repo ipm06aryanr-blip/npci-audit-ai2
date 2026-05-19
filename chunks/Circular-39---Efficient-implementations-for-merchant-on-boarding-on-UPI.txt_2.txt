@@ -1,0 +1,16 @@
+merchant PSP; 
+i) 
+Merchant bank switch is not able to process the request message to CBS (due to any reason)  
+ii) 
+CBS is not responding (with status) to merchant bank switch. 
+Merchant banks should ensure to reconcile all such transactions and pass credit to the merchant’s account if 
+online credit is unsuccessful.  Thus, the proposed process will help in reducing grievances/ customer 
+complaints arising due to decline/deemed approved transactions and increase the customer’s user 
+experience. 
+C) Check transaction status enablement for merchants:  
+ 
+Existing Process:  
+Merchant PSPs are initiating check transaction messages to NPCI UPI switch if the transaction status is 
+unknown (due to response time out) and updating the status at PSP end as approved, decline or deemed 
+approved as the case may be.  However, the status received for such check transaction message is not 
+being sent to the merchants. Merchants are therefore unable to get the online status of the transactions,

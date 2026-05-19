@@ -1,0 +1,32 @@
+collaterals have been carefully developed and must 
+not be altered, redrawn, embellished or recreated in 
+any way. 
+In case of space constraints where the BHIM UPI 
+logo unit cannot be sized at 100 pixels (matched 
+by width), the Fast-Forward symbol along with 
+BHIM UPI in text form must be used. In such 
+case, the size of Fast-Forward symbol must not 
+be smaller than 12 pixels.
+When BHIM UPI is used as a payment option, 
+BHIM UPI logo should be used along with other 
+payment options or Fast-Forward symbol must be 
+accompanied by BHIM UPI in text format
+depending upon space available.
+BHIM UPI as an option for payment, must 
+never be placed in “Others” tab. It must be placed
+prominently amongst other payment options,
+WYLMLYHIS`VU[OLÄYZ[WVZP[PVU
+VPA to be changed to UPI ID.   
+Select payment method 
+Your saved Credit and debit cards
+Enter UPI ID
+Another payment method 
+Credit card 
+Choose an Option
+Net Banking 
+Verify
+Select
+Verify
+Debit card 
+Choose an Option
+Cash on delivery

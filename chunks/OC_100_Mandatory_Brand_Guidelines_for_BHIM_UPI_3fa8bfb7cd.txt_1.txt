@@ -1,0 +1,16 @@
+bank-to-bank transfers, send and receive money, get instant alerts.
+It's safe. It's secure. It's seamless. It's BHIM UPI.
+UNIFIED PAYMENTS INTERFACE
+(UPI ID, UPI PIN, UPI FEATURES)
+BHIM UPI Brand Mark is used by the ecosystem involving NPCI, BHIM, Banks, Non-Banking Partners, Merchants, Third Party Partners and PPI 
+Players for using UPI based money transfer services. The brand mark to be used as follows:
+y
+BHIM logo to be used for promoting BHIM application only
+y
+Powered by UPI unit to be used by the ecosystem for the page(s) or screen(s) whereby the transaction is being processed using UPI platform
+y
+)/04<70SVNV\UP[[VIL\ZLKI`[OLLJVZ`Z[LTHZHUHJJLW[HUJLTHYRHJYVZZHSS[OLVUSPULVYVўPULJOHUULSVMJVTT\UPJH[PVUHUKMVY[OL
+non-transactional page(s) or screen(s) like homepage, send money, Scan & Page, request money, transaction history etc
+Brand Mark
+
+Powered by UPI Logo must be used at all places where UPI API’s are being called.

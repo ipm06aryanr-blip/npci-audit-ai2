@@ -1,0 +1,32 @@
+1001A, B wing, 10th Floor, The Capital, Bandra-Kurla Complex, Bandra (East), Mumbai - 400 051 
+CIN: U74990MH2008NPL189067 
+ 
+ 
+ 
+NPCI/UPI/ OC no. 21/ 2017-18 
+ 
+ 
+ 
+ 
+           08 June 2017 
+ 
+To,  
+All Member banks- Unified Payments Interface (UPI),  
+ 
+Subject: - Usage of BHIM by bank’s UPI PSP App 
+ 
+‘BHIM’ has been positioned as a starter UPI app and provides basic functionalities like send / 
+collect money, scan & pay etc. Many banks are promoting BHIM app to their customers along 
+with their own UPI PSP app. UPI app ecosystem has been expanding with close to 40 banks 
+launching UPI PSP apps, including that of BHIM.  
+It is being advised that Banks may at their own discretion use the brand ‘BHIM’ in conjunction 
+with their own ‘UPI PSP’ including that of BHIM logo. This will allow banks to avail the benefit 
+of popularity of BHIM app.  
+For E.g.:   
+BHIM < ABC Bank > UPI APP. 
+ 
+Yours faithfully,  
+ 
+ 
+Dilip Asbe  
+Chief Operating Officer

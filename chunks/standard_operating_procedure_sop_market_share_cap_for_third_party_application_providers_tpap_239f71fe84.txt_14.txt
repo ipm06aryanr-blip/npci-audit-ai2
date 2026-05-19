@@ -1,0 +1,13 @@
+from 01st January, 2021 until 31st December 2022 to comply with the SOP in a phased manner 
+and NPCI will review the same on a half-yearly basis starting from January 2022.  
+Exemption 
+ 
+Upon breach of threshold(s), basis request by TPAPs through their PSP Banks, there will be a 
+provision to exempt the players to some extent when the Volume cap is reached. NPCI may 
+provide the exemptions after evaluating the case basis justifications provided, recommendations 
+from the PSP Banks and also studying the impact to the UPI ecosystem. Such exemption may 
+last maximum up to 6 months unless specifically further extended. During exemption, if it is found 
+that the Market Share of a TPAP is near / breached the Volume Cap, such TPAP may be asked 
+to immediately Moderate the on-boarding of new customer along with a plan to remedy the non- 
+compliance to be reported to NPCI within (five) 5 working days from the date of notification by 
+NPCI (“Breach Notification”).

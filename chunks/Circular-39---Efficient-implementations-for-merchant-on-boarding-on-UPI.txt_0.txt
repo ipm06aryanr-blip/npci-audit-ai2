@@ -1,0 +1,21 @@
+NPCI /UPI/OC No. 39/2017-18  
+ 
+ 
+ 
+                                           Date: 20th Nov, 2017 
+To, 
+All Member of UPI – Unified Payments Interface 
+Subject: UPI - Efficient implementations for merchant on-boarding on UPI  
+ 
+A) Objective  
+ 
+Objective of this circular is to explain the existing and proposed process to handle merchant transactions 
+in UPI where merchant Acquiring PSP and merchant bank is same. The proposed process shall help in 
+handling of deemed approved transactions and confirmation to merchants for certainty in rendering of 
+goods/services to the customers. 
+ 
+B) Process for handling the merchant transactions which are declined/deemed approved 
+ 
+Existing Process: 
+NPCI sends a credit request message to merchant bank and the merchant bank either send a decline 
+response or the transaction response from merchant bank to NPCI may timeout, if merchant bank switch

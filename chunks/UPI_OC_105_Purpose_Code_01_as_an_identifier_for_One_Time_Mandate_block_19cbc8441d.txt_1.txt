@@ -1,0 +1,20 @@
+As the eco-system is exploring use cases on OTM such as advance hotel booking, ticket 
+booking, Earnest Money Deposit (EMO) etc., it is advised that acquiring member banks to 
+mandatorily use purpose code '01' and the applicable MCC as an identifier for all such use 
+cases pertaining to OTM with fund block. 
+It is advised that all members in UPI eco-system are ready as Issuer I and Acquirer, as the 
+case may be, to process OTM transactions in UPI. Members are further directed to ensure 
+compliance to UPI Circular no. 78 dated 27th January 2020 on 'Reconciliation and handling 
+declined/ timed out transactions in OTM'. 
+Members may bring the contents of the circular to the notice of their constituents concerned. 
+( 
+Yours faithfully, 
+Praveena Rai 
+coo 
+Page 1 of 1 
+Public - UPI 
+1001A, The Capital, B Wing, 10th Floor, 
+Bandra Kurla Complex. Bandra (E), Mumbai 400 051-
+T: +91 22 40009100 F: +91 22 40009101 
+contact@npci.org.in www.npci.org.in 
+CIN: U74990MH2008NPL189067

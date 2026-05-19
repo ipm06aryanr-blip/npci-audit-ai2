@@ -1,0 +1,34 @@
+1001A, B wing, 10th Floor, The Capital, Bandra-Kurla Complex, Bandra (East), Mumbai - 400 051 
+CIN: U74990MH2008NPL189067 
+ 
+ 
+NPCI/UPI/OC No. 42 /2017 – 18  
+ 
+ 
+                                                      15th Dec, 2017 
+ 
+To, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+All Members of Unified Payments Interface (UPI) 
+ 
+Dear Sir / Madam, 
+ 
+ 
+Sub: UPI – Enhanced penalty for not updating TCC, RET, DRC & RRC after T+1 working day 
+ 
+Objective: It has been observed that few banks are not updating the status in RGCS even after T+1 working 
+day for Deemed Approved transactions, un-responded reversals, credit adjustments & returns (i.e. TCC, 
+RET, DRC & RRC), which are resulting  in customer complaints. 
+ 
+The above matter was discussed by member banks in a meeting held on 13th Nov 2017.  It was deliberated 
+and approved therein to levy enhanced penalty (please refer below table for details) in addition to the

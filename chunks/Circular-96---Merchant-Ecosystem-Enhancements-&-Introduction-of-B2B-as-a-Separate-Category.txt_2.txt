@@ -1,0 +1,28 @@
+2. B2B Payments 
+ 
+To facilitate B2B payment transactions, Merchant apps can convert into UPI apps to onboard  
+ 
+Page 1 of 2 
+ 
+1001A, The Capital, B Wing, 10th Floor,  
+BandraKurla Complex, Bandra (E), Mumbai 400 051. 
+T: +91 22 40009100 F: +91 22 40009101 
+contact@npci.org.inwww.npci.org.in  
+CIN: U74990MH2008NPL189067 
+ 
+ 
+ 
+ 
+customers on the UPI platform and provide provision to Pay via UPI. All compliances as  
+applicable to UPI and TPAP apps will be applicable. 
+ 
+3. Merchant UPI ID 
+ 
+Merchant UPI IDs have been found to be complex, and the merchant is not aware of the UPI 
+ID. PSP Banks to ensure below guidelines are followed for creating Merchants/Businesses UPI 
+ID’s, effective 1st Nov 2020. 
+a. UPI ID should be simple, memorable & relatable 
+b. Merchant to be made aware of the merchant UPI ID through due communication and 
+notification  
+c. UPI ID should be distinctly visible in application landing page, and visible along with the 
+merchant UPI QR in the application.

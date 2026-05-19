@@ -1,0 +1,23 @@
+tag. IFSC is imperative for businesses like Insurance & Capital markets for address resolution 
+purpose and refunds, hence the banks must populate complete 11 digit IFSC. 
+5. Collect request raised by merchants on-boarded through Aggregators, should display the 
+Merchant name in the collect notification to customer. 
+6. Some Banks partnering with Aggregators are populating static MCC, for all merchant 
+transactions. Banks are expected to populate merchant specific MCCs. 
+ 
+ 
+ 
+Public - Public - 
+ 
+7. Banks to note the following for QR generation & Intent: 
+- 
+While generating an intent/QR string, ‘space’ has to be represented by  ’%’ and while 
+reading an intent, ‘%’ has to be replaced with ‘space’ by the UPI app.  
+- 
+For example, remarks entered by user “test transaction” shall generate intent 
+message as ‘’tn=test%transaction’’ and when read by UPI app, % should be replaced 
+with ‘space’. 
+ 
+ 
+E. Merchant On-boarding related 
+Objective: Standardization

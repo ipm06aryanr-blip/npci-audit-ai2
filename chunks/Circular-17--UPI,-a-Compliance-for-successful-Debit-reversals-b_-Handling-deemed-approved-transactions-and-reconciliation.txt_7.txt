@@ -1,0 +1,23 @@
+2.2 Reconciliation process for Deemed Approved transactions by Remitter Bank  
+ 
+Download DA transactions on daily basis from the RGCS application after every 
+settlement cycle.  
+ 
+Reconciliation has to be performed immediately after each settlement cycle. 
+ 
+Download the dispute report daily containing Transaction Credit Confirmation 
+(TCC) and Return (RET) to track time out transactions. 
+ 
+After receiving the return (RET) from the beneficiary bank amount should be 
+returned to the respective the remitting customers. 
+ 
+ 
+3. Handling Adjustment  
+ 
+Members should download all adjustments raised by other banks from RGCS, check the 
+status of those transactions and initiate suitable actions either by accepting or rejecting 
+the adjustments within TAT.  
+ 
+3.1 Credit Adjustments/Refunds for Merchant transactions 
+ 
+All banks as remitter should download the credit adjustments/refunds raised by the

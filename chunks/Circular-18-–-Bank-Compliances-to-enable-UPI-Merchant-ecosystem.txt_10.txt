@@ -1,0 +1,16 @@
+merchants to adapt UPI payment option. 
+2. All UPI PSP apps must use List VAE API to download and store UPI verified merchants. Thus, 
+build confidence in customers to use UPI as a preferred mode of payment at these 
+merchants. 
+ 
+D. Other Specific requirements 
+Objective: Ensuring Seamless Merchant payments: 
+ 
+1. In case of Collect request initiated from any PSP or merchant website, the details passed 
+by the PSP in the ‘transaction note’ tag should be non-editable and passed on by the 
+receiving PSP. It should also be displayed to the customer on the payment app. 
+2. The merchant name fetched by the Acquiring PSP during vpa resolution should always be 
+the verified name from the issuer CBS. 
+3. For push transactions initiated to a merchant VPA, wherein ‘MCC’ & ‘Type’ is absent or 
+incorrectly populated in Payee tag, it is observed that the Acquiring PSP fails to identify 
+this anomaly and thus fails to resolve the vpa with correct merchant credentials. This will

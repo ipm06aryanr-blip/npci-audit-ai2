@@ -1,0 +1,19 @@
+beneficiary. Verify the status of the complaints, initiate suitable actions (if required) 
+and respond to the complaints with status using appropriate reason codes in RGCS on 
+daily basis. 
+ 
+        Note: Please refer Complaint Management Process V1.0 for details. 
+ 
+6. Automated Recon Process & Dedicated Operations Team  
+ 
+6.1 Automated Recon Process 
+ 
+We recommend that the reconciliation process should be automated at the earliest so 
+that large volume of transactions can be handled.   
+ 
+6.2 Dedicated Team 
+ 
+We would also like to highlight importance of having a dedicated team to handle UPI 
+day to day operations such as reconciling the UPI transactions, handling customer 
+complaints, etc. The point of contact (SPOC) should be communicated to NPCI support 
+contacts mentioned by email.

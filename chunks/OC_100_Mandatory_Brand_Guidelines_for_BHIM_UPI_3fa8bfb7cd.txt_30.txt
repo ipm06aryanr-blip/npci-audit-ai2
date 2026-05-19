@@ -1,0 +1,33 @@
+About the App:
+One of the leading 
+mobile-to-mobile payment app. 
+Make UPI payments, transfer 
+money from your bank account.
+Using this app you can do a lot of 
+transaction at ease. You can use 
+BHIM UPI payments mode, 
+recharge your mobile / DTH, pay 
+your bills and make instant 
+payment at retail stores. All you 
+need to do is link your bank 
+account on this app with your 
+registered mobile number and start 
+the experience.
+UPI ID is a unique ID that is used 
+to make UPI payments in place of 
+bank account details.
+Transfer money using BHIM UPI:
+You can send money, receive 
+money from your contacts are from 
+any one by sharing you UPI ID. 
+You can transfer money instantly to 
+any mobile number via BHIM UPI 
+using UPI ID. You can check you 
+account balance and add multiple 
+bank accounts like ABC Bank, XZY 
+Bank, 123 Bank.
+UPI PIN:
+UPI PIN is similar to your Debit 
+Card PIN number, a 4 or 6 digit 
+number which needs to be set by 
+you while creating your UPI ID. For

@@ -1,0 +1,52 @@
+Member Banks are hereby advised to make a note of the above and do the needful. 
+ 
+ 
+Yours Sincerely, 
+ 
+ 
+ 
+Saiprasad Nabar 
+Chief – Online Product Operations and Technology 
+ 
+ 
+Annexure 
+ 
+UPI Decline Codes 
+ 
+UPI Decline 
+Response 
+Code 
+Description of Decline 
+Response Code 
+Type of 
+Declines 
+To be checked 
+by 
+Suggested Actions 
+Z7 
+TRANSACTION FREQUENCY 
+LIMIT EXCEEDED AS SET BY  
+REMITTING MEMBER 
+Bank 
+Induced 
+Remitter Bank,  
+Payer PSP 
+1.  Analyse the reason of decline. If it is on 
+account of wrong mapping of response 
+code, correct the mapping. 
+2.       Bank to review the limits. If required, 
+revise the limit. 
+3.       Bank to send communication via SMS 
+to customers regarding the Limit. 
+4.       Payer PSP to give Pop up message for 
+checking Transaction limit.  
+Z8 
+PER TRANSACTION LIMIT 
+EXCEEDED AS SET BY 
+REMITTING MEMBER 
+Bank 
+Induced 
+Remitter Bank,  
+Payer PSP 
+1.       Analyse the reason of decline. If it is on 
+account of wrong mapping of response

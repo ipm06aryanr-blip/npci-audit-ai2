@@ -1,0 +1,12 @@
+before applying to the production system. All scheduled activities related to switch, CBS middleware, 
+DR drills etc which require downtime should be carried out only during the non-peak hours i.e. 
+between 00:00 Hrs. to 05:00 Hrs. preferably on public holidays, Saturday and Sunday. This will help to 
+avoid customer dissatisfaction and non-availability of UPI services during peak hours.  
+2. It is also advised that member banks must send SMS alerts to the customers as and when bank passes 
+debit/credit/reversal entries for UPI online transactions or any entries passed post reconciliation. This 
+shall help customers to understand the status of transaction/complaints proactively and bring down 
+the complaints ratio at an ecosystem level.   
+ 
+All members are requested to take a note of the above, and ensure to put in place proper processes as stated 
+above to ensure compliance to NPCI guidelines.  
+Kindly disseminate the information contained herein to the officials concerned.

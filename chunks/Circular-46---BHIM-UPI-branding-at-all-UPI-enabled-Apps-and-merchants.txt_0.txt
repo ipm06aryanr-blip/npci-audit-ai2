@@ -1,0 +1,27 @@
+1001A, B wing, 10th Floor, The Capital, Bandra-Kurla Complex, Bandra (East), Mumbai - 400 051 
+CIN: U74990MH2008NPL189067 
+ 
+ 
+ 
+NPCI /UPI/OC No. 46/2017-18 
+ 
+ 
+ 
+             February 23, 2018 
+To, 
+All Member Banks - Unified Payments Interface (UPI) 
+Dear Sir/Madam, 
+Subject: BHIM UPI branding at all UPI enabled Apps and merchants 
+ 
+The UPI ecosystem comprises of multiple UPI applications which are owned by the 
+banks and 3rd party UPI enabled Apps sponsored by member banks as PSPs. We draw 
+your reference to our Circular No. NPCI /UPI/OC No. 21/2017-18 dated 8th June, 
+2017. 
+Further, member banks are advised as under: 
+1. All UPI enabled apps (Banks and 3rd party) may change name to BHIM <App 
+name> UPI App. They can display BHIM UPI on selecting the 
+payment/transfer. 
+ 
+2. Similarly, all the merchants accepting UPI payments (QR, Intent, Collect etc.) 
+to display BHIM UPI branding. 
+This will help consumer to recall all UPI enabled Apps and merchants with BHIM UPI

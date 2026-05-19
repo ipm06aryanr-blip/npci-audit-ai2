@@ -1,0 +1,30 @@
+43
+User Profile Page
+Partner app should display user specific UPI QR code 
+under user profile page. And the term ‘UPI ID’ should 
+be used before user’s UPI ID as represented below. 
+Also user UPI ID should be mentioned below the QR 
+code.
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+10:10
+Profile
+Download 
+QR code
+Share
+QR code
+APP LOGO
+UPI ID: user@upihandle
+44
+UPI ID: user@upihandle
+5 pixels
+POWERED BY
+25 pixels
+QR Code Scanning Page
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+10:10
+Scan QR Code
+On successful scan of the QR code for the 
+payment, it is mandatory to play 3 sec UPI 
+Sonic MOGO. This can be downloaded from

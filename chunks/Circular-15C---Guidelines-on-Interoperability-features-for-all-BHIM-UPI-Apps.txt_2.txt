@@ -1,0 +1,11 @@
+Above interoperability features must be enabled by 16th April 2018 by all BHIM UPI apps. The other compliance as 
+per earlier circulars shall continue to be applicable.  
+ 
+PSP bank must decline such transactions from non-compliant BHIM UPI apps after 16th April 2018 proactively. NPCI 
+reserves the rights to decline the transactions for such non-compliant apps.  
+ 
+The PSP Banks are advised to submit the compliance to NPCI on or before 16th April 2018.  
+ 
+Thanking you, 
+Vishal Kanvaty 
+SVP – Product & Innovation

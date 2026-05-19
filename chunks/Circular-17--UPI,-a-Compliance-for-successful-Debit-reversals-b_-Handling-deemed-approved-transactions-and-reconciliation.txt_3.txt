@@ -1,0 +1,72 @@
+or equivalent duly endorsed by the Audit Department of the Bank on or before 31st March 2017. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Should you need any further clarification, please contact the following officials:- 
+ 
+Name 
+E-mail ID 
+Contact No 
+Shivani Saxena 
+Shivani.saxena@npci.org.in 
+07506446567 
+Soumyajit Roy 
+soumyajit.roy@npci.org.in 
+08879754970 
+Rama Raju 
+rama.raju@npci.org.in 
+08108122895 
+ 
+Yours faithfully, 
+ 
+ 
+Dilip Asbe 
+Chief Operating Officer 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Annexure I 
+ 
+1. Implementation of 4 additional reversal test cases: Presently the test cases includes 
+only success and failure transactions.  We have created 4 additional test cases to include 
+the scenarios of debit reversal failures/timeouts with store and forward facility at the 
+bank’s end, in case their CBS is down/not responding for debit reversal advise. Our team 
+will get in touch with all the banks and get the certification completed urgently.

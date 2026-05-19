@@ -1,0 +1,51 @@
+30 PX
+10:10
+REMARKS:
+UPI Mandate
+MANDATE VALIDITY:
+From
+TO
+11/11/2020
+11/11/2020
+FREQUENCY:
+Select frequency
+Amount per cycle
+XXXXX
+Debit account*
+10:10
+Today | Sunday
+Pending
+Active
+Please note: Requested amount gets debited from your account on 
+recurrence basis as per the request.
+* I have read and confirmed the above mandate details
+Proceed
+Request From
+Request From
+merchant@upihandle
+MERC12345678
+Received on
+20/08/2020 | 02:00 pm
+Daily
+Accept Before
+21/08/2020 | 00:00 pm
+` XXXX
+XXXX XXXX
+Decline
+Approve
+The amount will be debited from your account multiple times based 
+on mentioned frequency during the validity period of the mandate. 
+You can also pause or revoke the mandate anytime.
+You will be guided to UPI pin page to authorize the creation of 
+standing instructions.
+30 PX
+Accepting the AUTOPAY request
+Validating the details
+AUTOPAY
+AUTOPAY
+LOGO
+ABC SHARMA
+ABC SHARMA
+Please note: Requested amount gets debited from your account on 
+recurrence basis as per the request.
+Proceed

@@ -1,0 +1,64 @@
+Merchant:
+UPI ID
+Reference ID:
+Period:
+Amount:
+XXXX
+XXXX
+XXX
+XXXX
+XXXX
+AUTOPAY Creation Notification
+30 PX
+AUTOPAY
+73
+UPI AUTOPAY Registration – Mandate QR Scan Flow
+Guidelines for positioning of UPI/BHIM logo as payment mode at merchant location (offline and online)
+Refer - UPI Circular no. NPCI /UPI/OC No. 35 /2017-18 dated October 11, 2017 
+74
+Website
+ABC MERCHANT
+Initiating recurring payment request on 
+merchant’s interface
+Enter
+Login Details
+User ID
+Password
+XXXX
+XXXX
+75
+Website
+ABC MERCHANT
+Initiating recurring payment request on 
+merchant’s interface
+Choose the plan as per your need
+Detail 1
+xxx
+xxx
+xxx
+xxx
+xxx
+xxx
+xxx
+xxx
+xxx
+Detail 2
+Detail 3
+Plan 1
+Plan 2
+Plan 3
+Continue
+76
+Website
+ABC MERCHANT
+Select the payment mode to activate the selected plan
+Payment Mode
+Debit Card
+Netbanking 
+Credit Card
+Initiating recurring payment request on merchant’s interface 
+by selecting ‘Setup UPI AUTOPAY payment’ option under 
+UPI payment mode.
+Make UPI payment
+Setup UPI AUTOPAY payment
+77

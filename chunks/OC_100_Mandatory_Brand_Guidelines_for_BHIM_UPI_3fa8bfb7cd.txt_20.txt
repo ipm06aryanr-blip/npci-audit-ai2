@@ -1,0 +1,25 @@
+
+Bank Logo
+“Any third party UPI App integrated with  bank’ SDK   
+( invoking NPCI Library)  should display  branding  of 
+partnering bank on all the UPI Payment pages”
+
+UPI ID 
+36
+What is UPI ID?
+UPI ID is your virtual identity for UPI payments. It is a single identifier for users to send and 
+receive money directly from one bank account to another. Once successfully registered on 
+UPI enable app, the suffix is predefined by the app and you can create a customised prefix 
+of your name, mobile number, date of birth, etc.
+For example – user@upihandle
+Features/Benefits
+You don’t need to remember your or receiver’s bank account details
+The prefix can be customized as per convenience
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+•
+•
+37
+What is UPI ID
+UPI ID: user@upihandle
+Here, ‘user’ is prefix and ‘upihandle’ is suffix

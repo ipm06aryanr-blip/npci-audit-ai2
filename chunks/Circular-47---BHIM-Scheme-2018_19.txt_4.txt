@@ -1,0 +1,28 @@
+ 
+New BHIM app user will mean : 
+o 
+Any new user who downloads the BHIM app for the first time and does one successful 
+financial transaction  
+ 
+ 
+ 
+Or  
+o 
+Existing BHIM user who has already downloaded BHIM APP but has not done any 
+successful financial transaction. 
+ 
+ 
+ 
+Or 
+o 
+Existing BHIM user who is using BHIM APP only to receive money but has never done any 
+successful pay (debit to his/her own account) transaction via BHIM App. 
+ 
+It is possible that a user is new to BHIM App but may be an existing BHIM UPI user of the 
+Bank. This user shall also be treated as new BHIM user and will be eligible for incentive, 
+subject to fulfilling above conditions.  
+ 
+New user can send money to any other BHIM UPI user of the bank through UPI ID, Account 
+number + IFSC or mobile number or scanning QR or intent. Sending money transactions 
+through AADHAAR number shall not be considered for the scheme benefit. 
+

@@ -1,0 +1,18 @@
+notification  
+c. UPI ID should be distinctly visible in application landing page, and visible along with the 
+merchant UPI QR in the application. 
+ 
+ 
+4. Merchant Bank Account Provisioning 
+Banks, PSPs & UPI apps, should show both Savings & Current Account provisioning in UPI 
+List Account API. Banks live on Overdraft should provision Overdraft Accounts. 
+All the points in the circular would be effective 1st, November 2020. 
+ 
+Yours Truly, 
+ 
+SD/- 
+Praveena Rai 
+Chief Operating Officer 
+National Payments Corporation of India 
+ 
+Page 2 of 2

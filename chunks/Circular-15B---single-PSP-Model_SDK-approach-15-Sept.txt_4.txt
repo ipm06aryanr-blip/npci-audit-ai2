@@ -1,0 +1,14 @@
+8. The PSP bank must have agreement with third party App provider for any 
+liability arising out of data breach/fraud/compromise at the app or third party 
+app provider’s system. Further the agreement/ arrangement between bank and 
+third party app provider must include compliance to Informational Privacy (as 
+aspect of Right to Privacy), IT act, Payment and Settlement System Act, UPI 
+Procedural guidelines or any such future law and guidelines issued by 
+government of India, RBI, any other regulator in India and NPCI. 
+9. The PSP bank must provision for customer to raise disputes on the app and 
+should ensure complaint management processes as per UPI Operating and 
+settlement guideline and Operating Circulars. The third party app provider and 
+PSP bank must ensure the customer service in case of disputes as prescribed by 
+UPI procedural guidelines and RBI customer service guidelines issued time to 
+time. 
+10. The call centre number (toll free number in India) must be prominently

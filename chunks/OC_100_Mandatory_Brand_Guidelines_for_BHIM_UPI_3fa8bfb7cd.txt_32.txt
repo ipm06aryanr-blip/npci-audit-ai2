@@ -1,0 +1,59 @@
+Account 2
+Bank Account
+Bank Account Number
+BANK
+LOGO
+POWERED BY
+PSP/ APP
+LOGO
+51
+Powered by UPI Logo must be used at all places 
+where UPI API’s are being called.
+UPI App – Onboarding process
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+10:10
+10:10
+Enter OTP
+Enter New UPI PIN
+Confirm New UPI PIN
+Powered by UPI logo should be displayed in the onboarding 
+process when you start linking your bank account.
+BANK
+LOGO
+50 pixels
+POWERED BY
+BANK
+LOGO
+POWERED BY
+52
+1
+2
+3
+4
+5
+6
+7
+8
+9
+»
+0
+9
+1
+2
+3
+4
+5
+6
+7
+8
+9
+»
+0
+9
+Powered by UPI Logo must be used at all places 
+where UPI API’s are being called.
+User warning screen
+Once the user has created his UPI ID, the partner app 
+should display the Do’s and Don’ts message as a pop-up 
+screen before exploring the features of the app.

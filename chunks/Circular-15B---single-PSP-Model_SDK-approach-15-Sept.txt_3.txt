@@ -1,0 +1,16 @@
+4. The bank must ensure that the system and app audit is performed to ensure 
+data integrity, encryption and the app security. This audit shall be done on 
+annual basis.  
+ 
+ 
+5. PSP Bank shall have the full right to conduct audit on the third party App 
+provider infrastructure, systems and application, database and security 
+practices including access/ user/ incident/ management at their end for 
+components related to UPI.  
+6. PSP Bank shall ensure that it will facilitate RBI, NPCI or any other formally 
+appointed agencies of RBI/ NPCI, to access the data and carry out audits of Bank 
+and third party app provider, as and when required.  
+7. The PSP bank must provide all the documentation and audit reports as listed by 
+NPCI before go live of any such third party app on single SDK model. 
+8. The PSP bank must have agreement with third party App provider for any 
+liability arising out of data breach/fraud/compromise at the app or third party

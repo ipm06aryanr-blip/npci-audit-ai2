@@ -1,0 +1,16 @@
+iii) 
+Bulk file format and other mandatory data fields length & format will be validated as per the 
+specification (refer section BULK FILE FORMAT in the Annexure – 1)  
+iv) 
+No penalty is applicable for Generic Good Faith Debit Adjustment, sponsor/acquiring banks 
+should choose penalty flag always as N (No Penalty). Irrespective of whether the bank is 
+raising with flag Y or N, no penalty will be applied by the URCS.  
+v) 
+Account number is mandatory for sponsor banks to enter when BGGD adjustment is raised 
+through front end or bulk upload. Sponsor bank should raise BGGD using remitting bank 
+customer’s account number which helps issuing bank to remove the lien and debit the 
+customer account. Once the adjustments are successfully settled, URCS will update the 
+account number in adjustment report, refer SHDT74 column for details  
+vi) 
+UMN will be made available in the adjustment report refer SHDT76 column for details. 
+vii)

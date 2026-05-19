@@ -1,0 +1,12 @@
+User experience on UPI Lite: 
+1. The UPI Lite balance shall be non-interest bearing.  
+2. The UPI Lite transactions shall be offered without AFA i.e. UPI PIN. However, it is recommended that the 
+UPI App is accessed by the User with app passcode/device authentication (biometric, pattern, etc.) before 
+performing the UPI Lite transaction, unless the User has disabled the app authentication.  
+3. The User can have multiple such UPI Lite on-device balances depending on the number of UPI Apps used 
+by the User to access one designated bank account. 
+4. The User can enable, disable and top up the UPI Lite (only in online mode) at any point in time and the fund 
+transfer between the UPI Lite and User’s bank account shall be processed in real-time.  
+5. The UPI Lite balance shall be displayed on the home screen of the UPI App to eliminate the need of separate 
+balance inquiry.   
+6. The UPI App shall, by default, use UPI Lite balance for transactions having value of less than or equal to Rs

@@ -1,0 +1,35 @@
+Any Regulatory or Government of India direction if found in conflict to this SOP, such order shall 
+prevail.  
+ 
+   
+ 
+ 
+ 
+   
+ 
+ 
+V1.0 
+9/9 
+  
+Annexure - I 
+ 
+On-us transaction Reporting to NPCI: 
+“On-us Transactions” in UPI means those transactions which are not processed and settled 
+through the UPI Central System which have to be reported to NPCI by PSP Bank(s) on monthly 
+basis before the 3rd day of each following month. Data should be shared in the following format 
+to upi_tpap_sop@npci.org.in: 
+Month: 
+Transaction Type 
+On-us transaction (Volume) 
+On-us transaction (Value) 
+P2P 
+ 
+ 
+P2M 
+ 
+ 
+P2PM 
+ 
+ 
+Table 4: On-us transactions volume and value reporting format 
+Note: The data reported after the deadline of 3rd of the following month shall not be considered

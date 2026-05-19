@@ -1,0 +1,12 @@
+4 The third party App providers store restricted data as permissible. It may be noted 
+that section 43A of the IT Act provides a framework in respect of handling all the 
+sensitive personal information. In this regard, reference is invited to Rule 3 & 7 in 
+particular of the IT Rules. Financial transactions conducted via UPI platform fall under 
+the category of sensitive personal data (where applicable and as defined) or 
+information under Section 43A of the IT Act. 
+5 Bearing reference to the aforementioned, it is hereby advised to members and the 
+third party App providers through member banks to ensure compliance with Rule 3 and 
+7 of the IT Rules with respect to maintaining security and privacy of information 
+pertaining to the technical architecture of the systems deployed as a part of the 
+payment system and transactions, the mechanism of transferring and processing the 
+data, outsourcing arrangement made with any other vendor and controls followed by

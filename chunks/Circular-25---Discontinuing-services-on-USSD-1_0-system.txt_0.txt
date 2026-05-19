@@ -1,0 +1,15 @@
+1001A, B wing, 10th Floor, The Capital, Bandra-Kurla Complex, Bandra (East), Mumbai - 400 051 
+CIN: U74990MH2008NPL189067 
+ 
+NPCI/UPI/OC no. 25/2017-18                                                                                                 June 30th, 2017 
+ 
+To, 
+All Members banks – Unified Payments Interface (UPI), 
+ 
+Subject: -  Discontinuing services on USSD 1.0 system 
+*99#, a USSD based mobile banking service of NPCI was initially launched in November 2012. The 
+service had limited reach and only two TSPs were offering this service i.e. MTNL & BSNL. 
+Understanding the importance of mobile banking in financial inclusion in general and of *99# in 
+particular, various regulatory/trade bodies came together to ensure on boarding of all TSPs on *99# 
+(USSD 1.0). With the wider ecosystem (11 TSPs), *99# was dedicated to the nation by Hon’ble Prime 
+minister on 28th August 2014, as part of Pradhan Manti Jan Dhan Yojna.

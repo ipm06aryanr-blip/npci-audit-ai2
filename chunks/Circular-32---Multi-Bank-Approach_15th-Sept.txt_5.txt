@@ -1,0 +1,13 @@
+Privacy), IT act, Payment and Settlement System Act, UPI Procedural guidelines or any 
+such future law and guidelines issued by government of India, RBI, any other regulator 
+in India and NPCI. 
+9. The PSP bank must provision for customer to raise disputes on the app and should 
+ensure complaint management processes as per UPI Operating and settlement guideline 
+and Operating Circulars. The third party app provider and PSP bank must ensure the 
+customer service in case of disputes as prescribed by UPI procedural guidelines and RBI 
+customer service guidelines issued time to time. 
+10. The call center number (toll free number in India) must be prominently displayed on 
+the app for customer service. 
+11. PSP Bank should ensure that all UPI Customers could participate to use this app & 
+choose any bank account from the list of Banks available on UPI platform. 
+12. PSP Bank shall ensure that that third party app provider shall require an exclusive

@@ -1,0 +1,27 @@
+Account number + IFSC or scanning QR or intent. Sending money transactions through AADHAAR 
+number shall not be considered for the scheme benefit. 
+ 
+The existing user can either pay or accept collect request, in other words the customer’s own 
+account should get debited. 
+ 
+The transaction shall cover both P2P as well as merchant (P2M) transaction. 
+ 
+Since money can be sent using account +IFSC so it is not necessary that the payee has the UPI 
+id or has downloaded any BHIM UPI app. However payee’s bank will have to be part of the 
+BHIM UPI ecosystem. 
+ 
+This scheme is further divided into two parts : 
+1. Incentive for unique transactions 
+ 
+Minimum transaction value – Rs 100 
+ 
+Incentive for unique transactions only, upper limit of 20 transactions in a month 
+ 
+Incentive of Rs. 25 per such transaction. 
+ 
+Potential to earn incentive up to Rs. 500 ( Rs. 25x20 transactions) in a month 
+ 
+2. Incentive for volume transactions 
+ 
+Minimum transaction value – Rs. 10  
+

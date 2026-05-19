@@ -1,0 +1,9 @@
+a transaction value of up to ₹200/-. To process billion-a-day transactions, entire UPI ecosystem will have to 
+invest heavily in infrastructure upgrade. Large banks have already implemented upgrades, such as separate 
+financial and meta transactions infrastructure, separate endpoints for payment service provider (PSP) / issuer 
+and to provide better technical up time for UPI services, and such banks are getting ready to process three times 
+of current volumes. 
+As an efficient strategy to process large-scale small value digital payments and based on the guidelines issued 
+by RBI for enabling mobile devices to support offline payments vide its circular no. CO.DPSS.POLC.No. S1264/ 
+02-14-003/2021-2022 titled “Framework for facilitating small value digital payments in offline mode” dated 
+3rd January 2022, NPCI has designed the “UPI Lite – On-Device wallet” (“UPI Lite”) functionality for UPI user

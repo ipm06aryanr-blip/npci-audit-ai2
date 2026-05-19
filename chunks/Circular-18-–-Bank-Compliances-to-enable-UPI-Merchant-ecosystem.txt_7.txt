@@ -1,0 +1,20 @@
+reconciliation and payment realization, impacts merchant confidence and adoption. 
+ 
+3. Intent protocols & recommendations for PSP Banks & Merchant Apps: 
+a. Merchant initiated intent call should mandatorily include the details as per <TABLE 1> 
+above as part of the key Deep linking parameters. Following may be additionally noted: 
+b. If the Minimum amount (mam) parameter is present, then the amount field should be 
+editable. However, the amount field will be non-editable if the 'mam' parameter is absent. 
+c. PSP apps/ SDK integrated UPI compliant apps should respond to the intent call initiated 
+by a Merchant app and confirm the transaction status with the following mandatory 
+parameters; 
+PN: Mentioned above are only the critical parameters for Merchant transactions. There are other additional 
+parameters which are optional and can be referred to, from the Deep Linking Specs provided to member 
+banks. 
+Mandatory 
+Parameters 
+Description 
+As per 
+'Deep linking 
+specs' 
+Revisions

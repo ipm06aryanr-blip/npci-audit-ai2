@@ -1,0 +1,16 @@
+enablement) etc. The UPI transaction data should be stored in the app providers 
+system in encrypted format.  
+ 
+2. Customer payment sensitive data: 
+Classified as customer account details (such as Account number) customer payment 
+authentication data (such as device fingerprinting) required for authentication as first 
+factor.  This data can be only stored in PSP bank systems. Some of the data like 
+account number, can be shown in masked format to the customer on the app as per 
+existing UPI PG. Last 6 digits of the Debit Card, Expiry date of the debit card, UPI 
+PIN, Issuer OTP should not be stored.  
+ 
+B. PSP Bank’s ownership & responsibility: 
+1. The App provider shall provide the required documentation including data flow 
+diagram, security details to PSP bank and NPCI. 
+2. The PSP bank must ensure that its board approves such multi-bank arrangement, since 
+all the liability arising in case of any data breach, wrong authentication etc. is borne by

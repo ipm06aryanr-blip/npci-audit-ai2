@@ -1,0 +1,14 @@
+Remitter banks has led to increase in customer complaints.  Such complaints also leads to wide 
+negative publicity of UPI as a Product. The issue of the customer not getting the amount 
+reversed online for a declined transactions and resultant high complaints was also discussed 
+and deliberated in the recent Steering Committee Meeting held on 13th February 2017.  
+ 
+Further to our deliberations and analysis done jointly with member banks, we wish to inform 
+that we have implemented 4 additional test cases to handle debit reversal failure/timeouts.  
+We are also introducing a new response code for proper identification/understanding of 
+declined transactions. The details are given in Annexure I.  Banks are requested to ensure strict 
+Compliance thereof. 
+ 
+Handling deemed approved transactions and reconciliation 
+ 
+We refer operating circulars NPCI/UPI/OC No. 04/2016 – 17 & NPCI/UPI/OC No. 09/2016 – 17 &

@@ -1,0 +1,16 @@
+certification for UPI 2.0 and onboard with all the 2.0 related features before March 31st 2019. 
+This was deliberated and approved in the UPI/IMPS Steering Committee meeting dated Dec 21, 
+2018. 
+b) All new banks shall be mandatorily certified only under UPI 2.0 effective immediately. 
+c) UPI central switch shall continue to provide support for both UPI versions only up to March 31st 
+2019 post which support shall be provided only for UPI 2.0 effective 1st April 2019. 
+d) It is expected that existing banks live in any version of UPI must also support both the versions till 
+the cut-off date of March 31st 2019. 
+Member baks are requested to take a note of the same for compliance and do the necessary change for 
+migration to UPI 2.0 latest by 31st of March 2019. 
+ 
+Yours faithfully 
+ 
+ 
+Vishal Kanvaty  
+SVP- Product & Innovations

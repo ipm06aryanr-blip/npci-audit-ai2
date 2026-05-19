@@ -1,0 +1,30 @@
+This can be downloaded from 
+https://www.npci.org.in/brand-centre
+UPI ID creation page
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+UPI ID created successfully
+10:10
+UPI ID: user@upihandle
+Account added successfully
+Accounts no.:
+XXXXX
+Bank Name: XYZ BANK
+Branch: MUMBAI
+IFSC code: 123456
+Type: Saving
+54
+UPI Home Page
+Users' home page should display his/her UPI ID below 
+the partner app logo. In case the logo is not present 
+the UPI ID should be highlighted on home page.
+And the term 'UPI ID' should be used before user's 
+UPI ID as represented below.
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+10:10
+UPI ID: user@upihandle
+Send
+Money
+Receive
+Money

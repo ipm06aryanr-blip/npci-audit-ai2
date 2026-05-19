@@ -1,0 +1,23 @@
+system of NPCI.  Redirecting the customer, especially when he/she is out of funds, gives a bad 
+customer experience and dissatisfaction.   
+ 
+Please note that in case of any issue/complaint raised by a customer to his/her bank through 
+any channel like Call Centre, social media, branch, email etc. the customer’s bank 
+(remitting/beneficiary bank) should acknowledge all complaints raised by the customer 
+(irrespective of any PSP app customer uses) and take necessary steps to address the same.   
+ 
+ 
+Further, all member banks are requested to respond within T+1 day for all customer 
+complaints received through back-office system of BHIM UPI. For PSP Apps, it is mandatory 
+to update the status of complaints on their PSP App by T+1 and notification/SMS should be 
+sent to customer informing the status of complaint.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In view of the above, we request you to train all customer facing teams of your bank to

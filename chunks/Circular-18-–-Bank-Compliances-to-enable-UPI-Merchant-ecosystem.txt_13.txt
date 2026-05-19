@@ -1,0 +1,41 @@
+message as ‘’tn=test%transaction’’ and when read by UPI app, % should be replaced 
+with ‘space’. 
+ 
+ 
+E. Merchant On-boarding related 
+Objective: Standardization 
+1.) Merchant Onboarding Report: Banks Acquiring merchants on UPI should provide below details 
+fort nightly by 15th & 30th of every month for the next 4 months only;  
+Bank 
+nam
+e 
+Aggregator 
+name/ 
+Merchant 
+Name 
+Sub-merchant 
+name 
+(in case of 
+Aggregators) 
+MCC 
+populate
+d 
+Integration 
+Type 
+(Web Collect/ 
+SDK/ intent ) 
+Type of Services 
+offered (P2P/ P2M 
+or Both) 
+  
+  
+  
+  
+  
+ 
+2.) Banks must provide the following for all Merchants on-boarded through SDK route; 
+i. Network Architecture for merchant integration. 
+ii. UPI App checklist stamped and signed by the Bank. 
+iii. External security audit report and compliances for SDK Third Party Audit report and 
+merchant/ PSP provider application (As mentioned in Circular 15A) 
+iv. Bank Assurance letter with the following;

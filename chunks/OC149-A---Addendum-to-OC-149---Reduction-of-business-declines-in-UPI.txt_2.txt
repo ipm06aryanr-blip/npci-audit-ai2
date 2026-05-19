@@ -1,0 +1,16 @@
+declines and Business declines for seamless customer experience. RBI has advised NPCI to work 
+towards reducing Technical Declines (TD) to below 1% and Business Declines (BD) to below 5%. 
+Also RBI directed to advise all banks with BD more than 10% to take up targeted literacy 
+campaigns amongst their customers. 
+ 
+In order to work on business declines, banks are required to bifurcate such declines into customer 
+induced declines and bank induced declines. Bank induced declines can be minimized, by 
+analyzing and taking corrective action at respective Bank end. In view thereof, it is essential for 
+member banks to analyse the business declines, take corrective actions and also run customer 
+literacy campaigns, especially where business declines are more than 10%.  The sample list of 
+business decline response codes for UPI along with suggested actions are provided in Annexure.  
+ 
+Member Banks are hereby advised to make a note of the above and do the needful. 
+ 
+ 
+Yours Sincerely,

@@ -1,0 +1,13 @@
+basis i.e. on 4th day. 
+RBI PENALTY CALCULATION: 
+ 
+No penalty is applicable for BGGD, because it’s an offline IPO/Mandate with block functionality 
+execution where the fulfilment of goods/services is already given by merchant to the customer. Note: 
+The “Penalty Flag” field will not be available in the front-end interface. However, in the bulk file 
+format, the penalty flag column will be visible for BGGD. Issuing bank has to choose the penalty 
+flag always as “N” (for no penalty) as good to have, but if issuing bank inadvertently selects 
+penalty flag as “Y” even then URCS will not settle the penalty amount irrespective of flag “Y” or 
+“N”. 
+DUPLICATE BULK FILE CHECK: If any manual adjustments are processed with same bulk file name 
+(duplicate file where primary bulk file is already processed successfully/failed), then URCS will reject 
+the entire file. Member banks should ensure to raise unique bulk file naming convention.

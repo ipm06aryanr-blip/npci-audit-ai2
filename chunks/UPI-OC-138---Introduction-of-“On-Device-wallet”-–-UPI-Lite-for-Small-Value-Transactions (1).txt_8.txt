@@ -1,0 +1,14 @@
+transactions.  
+2. In case of any disputes, the UPI App shall display status of the funds being credited to the User's bank 
+account as per the dispute management process.  
+ 
+B. Responsibility of the UPI App and PSP, in addition to specifics in the circular 
+1. To take mandatory consent from the User for UPI Lite enablement with clear and specific disclaimers and 
+create awareness of this functionality and its advantages to the User. 
+2. To ensure that UPI Lite services are not offered on jailbroken/rooted (unsecured) mobile phones.  
+3. The PSP (and/or third party app provider (TPAP)) shall be responsible for User management and other 
+responsibilities related to usage of UPI Lite including that of safety and security of UPI App and in turn UPI 
+Lite. 
+4. The UPI App may send in-app notifications for the enablement of the UPI Lite to Users to provide a better 
+experience to the Users.  
+5. The UPI App shall not enable peer-to-peer collect transaction from UPI Lite.

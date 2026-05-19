@@ -1,0 +1,27 @@
+c) Bivek Rath 
+ 
+Yours truly, 
+ 
+Dilip Asbe 
+Chief Operating Officer 
+ 
+ 
+ 
+Public - Public - 
+Annexure 
+ 
+A. QR Related 
+Objective: Functional Uniformity in QR based merchant solutions: 
+ 
+1.) Challenges with the current implementations (Based on observations & live scenarios): 
+ 
+a. Bank PSPs scanning QR codes, fail to pass parameters populated by initiating PSPs or 
+Merchant apps/web. 
+b. The Bank PSP apps have built in business logics to read QR codes by defining MCCs. 
+This may lead to transactions being declined in case of MCC = ‘0000’(P2P). 
+c. There is an imminent need to populate few critical business parameters like MCC, 
+Transaction reference number (tr) and Amount (am) while generating Dynamic QR. 
+d. In case of Static QR wherein the Transaction reference number (tr) is not generated, 
+the Bank PSPs scanning such QR are not able to populate and pass the parameters. 
+ 
+2.) Impact: Lack of uniformity in the PSP app functionality may lead to poor customer experience

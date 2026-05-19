@@ -1,0 +1,10 @@
+UPI enabled Banks to follow guidelines as mentioned in the NPCI circulars numbers 21, 27 & 46 and 
+any other relevant communication sent in this regard or is communicated in future. Banks need to 
+confirm the necessary enablement to NPCI for inclusion in the scheme. As an on-going process, banks 
+need to confirm this enablement by 20th each month to be part of scheme from the next month (e.g.: 
+confirmation of change by 20th May 2018, will be considered as part of the scheme from 1st June 2018 
+onwards and so on). Banks need to confirm via email on brand@npci.org.in as well as to respective 
+RMs along with screenshots. Banks that have already done changes and are part of the scheme do not 
+have to inform again unless there are any changes in the existing APP or any new BHIM UPI app is 
+introduced. Please note this scheme is run by Government of India and NPCI is an implementing 
+agency and the right of inclusion/exclusion of any app/entity rest with the government.

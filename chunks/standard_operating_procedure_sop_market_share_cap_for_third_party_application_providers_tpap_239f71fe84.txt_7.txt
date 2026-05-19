@@ -1,0 +1,12 @@
+1. ‘Total Volume of UPI Transactions’ shall mean the aggregate of all successful financial 
+transactions in UPI ecosystem. Payments to UPI Id, account number + IFSC combination, 
+the financial leg of the mandate transactions (both one-time mandate and recurring), 
+payment to PPIs and other permissible account types which are being implemented in 
+near future shall also be considered. This shall include all P2P, P2PM and P2M 
+transactions performed in UPI through various modes like Push, Collect, Intent, QR or any 
+other future modes including B2B and B2C transactions.  
+ 
+2. ‘TPAP UPI Transactions’ shall mean the aggregate of all successful financial 
+transactions on TPAP UPI App shall be considered for the computation. This shall include 
+all P2P, P2PM and P2M transactions performed on TPAP UPI App through various modes 
+like Push, Collect, Intent, QR or any other future modes. Payments to UPI Id, account

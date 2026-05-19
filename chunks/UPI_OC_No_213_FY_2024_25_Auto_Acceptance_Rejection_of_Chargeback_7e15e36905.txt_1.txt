@@ -1,0 +1,21 @@
+and the chargeback has been closed on deemed acceptance basis along with RBI penalty. 
+ 
+To address these challenges and improve the efficiency of dispute resolution, we are implementing auto 
+acceptance/rejection of chargeback basis the TCC/RET raised by the beneficiary bank in next settlement cycle 
+after the chargeback is already raised. Note, this revised process is applicable only for bulk upload option & UDIR 
+not in front end option.  
+ 
+Key Changes in the Revised Process: 
+ 
+ 
+The above functionality will be implemented in URCS with effect from Feb 15, 2025. 
+ 
+Member banks are advised to take a note of the above and disseminate the information contained herein to the 
+officials concerned. 
+ 
+Warm Regards, 
+ 
+SD/- 
+ 
+Giridhar GM 
+Chief – Customer Success

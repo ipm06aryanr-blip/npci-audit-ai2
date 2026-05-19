@@ -1,0 +1,50 @@
+GUIDELINE
+AUTOPAY
+The screenshots are only for illustrative representation purposes only.
+UPI AUTOPAY Feature
+Introducing UPI AUTOPAY, a new feature in the 
+UPI platform, where one can create a mandate 
+for recurring payments as per one's convenience. 
+It is available on all UPI powered apps.
+63
+The Logo & Colour
+The logo is derived from the UPI and NPCI brand elements. 
+The word ‘AUTOPAY’ will come under the UPI logo written 
+in ‘Helvetica’ font stretching from start of word ‘U’ of United 
+to the word of ‘E’ of Interface. 
+Colour: The colour of AUTOPAY will be grey as shown here. 
+AUTOPAY
+AUTOPAY
+C  000
+M  065
+Y  100
+K  000
+C  100
+M  000
+Y  100
+K  020
+C  000
+M  000
+Y  000
+K  090
+C  000
+M  000
+Y   000
+K   070
+R  109
+G  110
+B  113
+R  217
+G  120
+B  045
+R  043
+G  139
+B  075
+R  067
+G  066
+B  068
+64
+The Logo Size
+Usage of UPI AUTOPAY in all the partners app, website 
+and communication materials must adhere to the 
+specification provided here and not be tempered with.

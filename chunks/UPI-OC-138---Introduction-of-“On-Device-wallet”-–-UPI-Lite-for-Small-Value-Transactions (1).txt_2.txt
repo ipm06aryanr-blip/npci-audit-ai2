@@ -1,0 +1,9 @@
+3rd January 2022, NPCI has designed the “UPI Lite – On-Device wallet” (“UPI Lite”) functionality for UPI user 
+(User). In phase 1, UPI Lite will process transactions in near offline mode i.e. debit offline and credit online, and 
+at a later point, UPI Lite will process transactions in complete offline mode i.e. debit and credit both offline. 
+A User of UPI App will have the option to enable UPI Lite i.e. “On-Device wallet” on her/his UPI App. Once 
+enabled, the User can allocate funds from her/his bank account to UPI Lite. Such funds shall reside with the 
+User’s bank in an escrow / pool / designated account and such balance shall reside on-device on the common 
+library (CL) of the User’s UPI App.  
+At present, only debit from UPI Lite balance shall be permitted and all credits to UPI Lite (including refunds, etc.) 
+will be processed online in the User’s bank account maintained in the bank’s core banking system. The upper

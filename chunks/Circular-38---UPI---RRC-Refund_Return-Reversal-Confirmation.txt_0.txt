@@ -1,0 +1,33 @@
+NPCI/ UPI/OC No. 38/2017 – 18 
+ 
+ 
+ 
+                                        01st Nov, 2017 
+ 
+To, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+All Members of Unified Payments Interface (UPI) 
+ 
+Dear Sir / Madam, 
+ 
+Sub: UPI – RRC “Refund/Return Reversal Confirmation” 
+ 
+Objective: Objective of this circular is to explain handling and controls to be built for credit 
+adjustments/returns by the customer banks.  
+ 
+We have observed that Remitting/issuing banks are not reversing their customer’s account 
+even after receiving the credit adjustments / returns from beneficiary/acquiring banks. In 
+such case, customers are getting out of fund for many day and further those transactions are 
+resulting in customer complaints. This matter has been deliberated in the UPI Steering 
+Committee Meeting (SCM) held on 12th May 2017. After detailed deliberation, SCM has 
+approved implementing the below defined process i.e. “Refund/Return Reversal

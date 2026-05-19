@@ -1,0 +1,22 @@
+1001A, B wing, 10th Floor, The Capital, Bandra-Kurla Complex, Bandra (East), Mumbai - 400 051 
+CIN: U74990MH2008NPL189067 
+ 
+ 
+NPCI /UPI/OC No. 50 /2018-19  
+ 
+ 
+ 
+                                       11thJune, 2018 
+ 
+To, 
+All Member Banks – UPI  
+Dear Sir/Madam, 
+Subject: Introduction of Bill Pay functionality (BBPS) on BHIM APP 
+We wish to submit that NPCI has operationalized the Bill Payment functionality in BHIM, through 
+BBPS platform w.e.f. 25th May 2018. 
+This functionality is allowed to those banks which are live in BBPS as customer OU and live in BHIM. 
+All the BHIM customers whose banks fall in this category shall be able to make bill payments using 
+BHIM App. 
+Banks who are willing to participate for the bill pay functionality in BHIM needs to provide, an 
+amendment to the common app (format annexed) and also provide necessary account details for 
+crediting BHIM bill pay transactions in UPI.

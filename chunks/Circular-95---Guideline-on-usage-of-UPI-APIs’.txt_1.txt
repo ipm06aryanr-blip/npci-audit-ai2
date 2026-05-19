@@ -1,0 +1,11 @@
+Third Payment Application providers (TPAPs).  
+2. From time to time, NPCI has issued guidelines defining the message specifications and 
+intended purpose of these APIs and the usage of the information retrieved from these API’s. 
+For e.g. List Account API should be used only for linking of account in the process of handle 
+creation with device binding and not otherwise. Likewise, the Balance Inquiry API can be only 
+initiated by the customer on the UPI app and the actual balance cannot be used or stored even 
+in encrypted format by any player in the UPI chain for any purpose except customer’s bank 
+(Ref UPI OC No. 44 dated 11th January 2018). The customer data (PII Data – Personally 
+Identifiable Information such as account number etc.) to reside in bank or bank owned data 
+center and the same should not be passed to any party including that of Merchant or 
+Intermediary unless specified by the industry regulator (RBI, SEBI, IRDA, etc.) as the

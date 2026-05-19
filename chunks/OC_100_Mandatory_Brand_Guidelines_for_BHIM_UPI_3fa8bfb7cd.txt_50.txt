@@ -1,0 +1,71 @@
+Entering UPI PIN
+Received from
+Merchant name: 
+Amount: XXX
+Enter UPI PIN
+Confirm
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+UPI AUTOPAY Details
+Start Date:
+End Date:
+Frequency:
+UMIN:
+Remarks
+Transaction ID: 
+AUTOPAY
+80
+50 pixels
+POWERED BY
+Mandate Acceptance
+UPI AUTOPAY unit usage in Mobile App.
+AUTOPAY Creation Notification
+10:10
+You can see details of this Autopay in Active mandate
+Merchant:
+UPI ID
+Reference ID:
+Period:
+Amount:
+XXXX
+XXXX
+XXX
+XXXX
+XXXX
+has been created sucessfully
+30 PX
+AUTOPAY
+81
+UPI AUTOPAY Registration – Intent Flow
+Guidelines for positioning of UPI/BHIM logo as payment mode at merchant location (offline and online)
+Refer - UPI Circular no. NPCI /UPI/OC No. 35 /2017-18 dated October 11, 2017 
+82
+Payment option
+10:10
+Payment mode
+Selecting UPI AUTOPAY
+for payment mode
+Initiating recurring payment
+request for merchant service
+LOGO
+Debit Card
+Credit Card
+Netbanking 
+10:10
+Electricity Bill Payments
+LOGO
+Pay now
+XXXX
+XXXX
+XXXX
+Consumer Name:
+Consumer No.:
+Amount:

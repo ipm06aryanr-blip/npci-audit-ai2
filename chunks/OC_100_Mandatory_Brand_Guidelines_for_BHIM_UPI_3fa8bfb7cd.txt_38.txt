@@ -1,0 +1,25 @@
+Whichever mode user intiates the UPI payment, 
+UPI ID should be present in the conversation box. 
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+10:10
+ABC Sharma abc@upihandle
+Rs:
+XXXX
+Received. 15th Aug
+Pay
+Request
+Type message
+50 pixels
+POWERED BY
+59
+Transaction history page
+In the transaction history page, all UPI transaction should have 
+‘Powered by UPI’ logo on top right side as shown below, the 
+size of the same should be not less than 20 pixels in height. 
+Transaction history page should have a provision made for 
+bifurcation of transaction into 3 categories – All Transactions, 
+UPI Transactions and Card Transactions
+Partner app should display beneficiary’s UPI ID on their 
+respective transaction. Only UPI apps should have powered by 
+UPI logo on the top RHS of the screen

@@ -1,0 +1,25 @@
+account number in adjustment report, refer SHDT74 column for details  
+vi) 
+UMN will be made available in the adjustment report refer SHDT76 column for details. 
+vii) 
+All good faith adjustments should be either accepted/represented within 3 calendar days 
+from the next day of generic good faith debit adjustment is raised. Otherwise, the window 
+will be closed on deemed acceptance i.e. on 4th calendar day. 
+X) 
+Sponsor/Acquiring banks should ensure to do due diligence and proper validation of debit 
+adjustments before raising in URCS.  
+XI) 
+Generic good faith debit adjustment amount will be settled in existing NTSL line item ‘Net 
+Adjusted Amount’. 
+ 
+The above functionality shall be made available to the banks with effect from Mar 15, 
+2025. 
+Refer Annexure -1, for rules and detailed process for handling generic good faith debit adjustments. 
+ 
+Kindly disseminate the information contained herein to the officials concerned. 
+ 
+Warm Regards, 
+ 
+SD/- 
+ 
+Giridhar GM

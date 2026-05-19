@@ -1,0 +1,29 @@
+Card Transactions
+Transactions
+60
+Powered by UPI Logo must be used at all places 
+where UPI API’s are being called.
+Payment successful screen
+On the payment successful page, UPI ID to which the 
+payment was done should be mentioned. And, 1 sec UPI 
+Sonic should be played.
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+10:10
+POWERED BY
+Payment Successful
+Payment made to
+beneficiary@upihandle
+50 pixels
+7 pixels
+On successful creation of UPI ID,
+it is mandatory to play 3 sec UPI Sonic MOGO. 
+This can be downloaded from 
+https://www.npci.org.in/brand-centre
+61
+The screenshots are only for illustrative representation purposes only.
+GUIDELINE
+AUTOPAY
+The screenshots are only for illustrative representation purposes only.
+UPI AUTOPAY Feature
+Introducing UPI AUTOPAY, a new feature in the

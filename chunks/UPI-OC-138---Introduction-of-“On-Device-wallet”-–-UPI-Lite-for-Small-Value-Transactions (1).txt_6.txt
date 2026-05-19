@@ -1,0 +1,17 @@
+transactions.  
+Members are also advised to refer to the aforementioned RBI framework on small value payments in offline 
+mode and the process guidelines issued by NPCI with respect to UPI Lite. Initially UPI Lite shall be launched as 
+a pilot with multiple banks and app providers, and after a due comfort is achieved, the full scale commercial 
+launch with compliance timelines for on-boarding for the issuers and app providers shall be declared. Please 
+refer Annexure A for additional details on UPI Lite.  
+Yours Sincerely,  
+Kunal Kalawatia (Sd.) 
+Chief of Product 
+ 
+Annexure A 
+A. Customer-facing Information and experience to be provided, in addition to specifics in the circular  
+ 
+By UPI App, for UPI Lite enablement: 
+1. The User’s (only) bank account will be debited for loading UPI Lite 
+2. The User can disable UPI Lite services at any point of time from the UPI App and on disabling UPI Lite, 
+balance funds will be credited back to the User’s account in real-time

@@ -1,0 +1,46 @@
+App logo
+UPI ID: user@upihandle
+App logo
+UPI ID: user@upihandle
+10:10
+UPI ID: user@upihandle
+APP LOGO
+UPI ID: user@upihandle
+38
+7 pixels
+7 pixels
+UPI PIN
+39
+What is UPI PIN?
+UPI PIN  is the personal identification number. Its is either 4 or 6 digit 
+passcode which a user need to set while registering on an UPI app for 
+the first time. Its a very important passcode number which is required 
+for all payment transactions. A user must remember their UPI PIN and 
+importantly not to share with anyone.
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+40
+What is UPI PIN
+10:10
+Bank Account Number
+Enter UPI PIN
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+BANK
+LOGO
+PSP/ APP
+LOGO
+50 pixels
+POWERED BY
+Reset UPI PIN
+UPI PIN Reset:
+If anyone needs to reset their UPI PIN, go to the UPI App 
+and select ‘Reset UPI PIN’ option under Bank account

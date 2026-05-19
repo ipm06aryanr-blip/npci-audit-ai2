@@ -1,0 +1,14 @@
+The customer data can be defined as Customer’s name, customer’s mobile 
+number, residential address, email ID, gender, location details (entered by 
+customer); device details such as App id, IMEI number, transaction related 
+details – UPI ID, RRN, transaction id, time stamp, beneficiary UPI ID, beneficiary 
+account number and beneficiary CBS name resolved by beneficiary’s PSP 
+(stored for subsequent transaction enablement) etc. The UPI transaction data 
+should be stored in the app providers system in encrypted format.  
+ 
+b) Customer payment sensitive data: 
+Classified as customer account details (such as Account number) customer 
+payment authentication data (such as device fingerprinting) required for 
+authentication as first factor.  This data can be only stored in PSP bank 
+systems. Some of the data like account number, can be shown in masked 
+format to the customer on the app as per existing UPI PG. Last 6 digits of the

@@ -1,0 +1,18 @@
+apps should read the string and display the parameters of the string in a non-editable 
+view. 
+e. Upon customer confirmation the app should re-direct the customer to NPCI CL page for 
+UPI PIN input. 
+f. Post transaction completion, the PSP apps/ SDK integrated UPI compliant apps should 
+provide the intent response to Merchant app and pass on the control to merchant app 
+along with mandatory response parameters. 
+ 
+ 
+C. Merchant Whitelisting related 
+ 
+Objective: Implementation of Manage & List VAE (Virtual address entries) APIs - UPI product 
+facilitates 2 APIs to whitelist and publish UPI verified merchants. 
+ 
+1. Banks acquiring merchants for UPI payment mode must whitelist merchants using manage 
+VAE API, to publish their list of verified merchants. Thus, promote and encourage 
+merchants to adapt UPI payment option. 
+2. All UPI PSP apps must use List VAE API to download and store UPI verified merchants. Thus,

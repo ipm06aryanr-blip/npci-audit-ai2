@@ -1,0 +1,23 @@
+NPCI /UPI/OC No. 15B/2017-18 
+ 
+ 
+ 
+        
+ 15th September, 2017 
+To, 
+All Member Banks - Unified Payments Interface (UPI) 
+ 
+Dear Sir/Madam, 
+Subject: Single PSP model Merchant integration (Addendum circular 15B) 
+ 
+In addition to Bank PSP apps, adoption of UPI payment by merchants and third party app 
+providers has enabled the growth of UPI by integrating PSP SDK into their app. This entails 
+bank to share the Common Library (CL) in a secured wrapper within PSP SDK (Software 
+development kit). The PSP bank SDK integrated in the app connects to the bank PSP server 
+for UPI related functions on secure channel.  This circular to be read in continuation to 15 
+and 15A.  
+The banks engaging in deep integration with third party app provider should note the 
+following; 
+a) Customer Data (including customer consented data):  
+The customer data can be defined as Customer’s name, customer’s mobile 
+number, residential address, email ID, gender, location details (entered by

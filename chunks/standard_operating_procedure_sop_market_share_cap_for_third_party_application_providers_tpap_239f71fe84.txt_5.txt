@@ -1,0 +1,21 @@
+may be for a limited time period of upto (six) 6 months basis the request by TPAP through their 
+PSP Bank upon breach of certain threshold(s). This decision to permit exemption will be decided 
+by NPCI basis the merits of the case. The TPAP shall work towards moderating or restricting the 
+   
+ 
+ 
+ 
+   
+ 
+ 
+V1.0 
+3/9 
+  
+new customer onboarding, as the case may be, which could eventually bring down the market 
+share of such TPAP with a view to achieve compliance. UPI as on today has over (fifty) 50 enabled 
+apps (listed on NPCI website) which will provide sufficient choice to a customer, if in case the 
+user faces issues at the time of on-boarding owing to restrictions on the Volume Cap. The Volume 
+Cap is applicable only for the transactions initiated from a TPAP UPI App (acting as Payer) and 
+not applicable for the recipient end, i.e., Payee TPAP end.  
+ 
+For the purpose of clarification, a ‘Payer TPAP’ shall mean a participant in the UPI which can

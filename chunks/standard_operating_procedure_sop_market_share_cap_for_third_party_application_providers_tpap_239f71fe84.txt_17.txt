@@ -1,0 +1,17 @@
+Customer Communication 
+ 
+TPAP and PSP Bank(s) shall communicate following as illustrative message to new customers 
+in the event of moderated on-boarding or stopping of complete on-boarding: 
+ 
+“Dear user, as per NPCI rules any UPI app with more than 30% market share cannot onboard 
+new customers until their market share goes down. Currently, <App name's> UPI market share 
+is <XYZ>% so unfortunately, you'll have to wait a while before you can access our UPI services. 
+We apologize for the inconvenience and promise to notify you as soon as NPCI allows us to 
+onboard you again!'.” 
+ Action on non-compliance 
+ 
+Notwithstanding to the contrary contained in the SOP, NPCI is authorized to penalize the non-
+compliant TPAP under the provisions of the UPI Procedural Guidelines, as may be issued from 
+time to time. Any other compliances as imposed by NPCI, RBI, Government or any other 
+Regulatory body needs to be adhered to irrespective of the position on the Market Cap.  
+Reporting

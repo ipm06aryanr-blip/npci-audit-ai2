@@ -1,0 +1,26 @@
+NPCI /UPI/OC No.17 /2016-17 
+ 
+ 
+ 
+ 
+ 
+          March 9, 2017 
+ 
+To, 
+All Member Banks - Unified Payments Interface (UPI) 
+  
+Dear Sir/Madam, 
+ 
+Subject: UPI –  
+a. Compliance for successful Debit reversals  
+b. Handling deemed approved transactions and reconciliation 
+ 
+NPCI launched UPI on 25th August, 2016 and presently, 44 banks are live on UPI with 33 banks’ 
+PSP Apps live on Play Store. With the ever increasing transaction volume and high 
+publicity/visibility/awareness created for UPI coupled with large no. of customers using UPI, it 
+becomes incumbent upon all participants to live up to customers’ expectations and make 
+available high quality customer service.  
+ 
+We have observed that non-processing of online debit reversal for declined transactions by the 
+Remitter banks has led to increase in customer complaints.  Such complaints also leads to wide 
+negative publicity of UPI as a Product. The issue of the customer not getting the amount

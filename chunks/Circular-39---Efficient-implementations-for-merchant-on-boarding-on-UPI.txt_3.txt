@@ -1,0 +1,17 @@
+being sent to the merchants. Merchants are therefore unable to get the online status of the transactions, 
+which is very essential for merchants to handle the customer complaints. 
+Proposed Process: 
+i) 
+Whenever merchant PSPs gets time out response, it is advised that merchant PSPs initiate online 
+check transaction message with NPCI UPI switch and update the status in online (status can be 
+approved, declined or deemed approved). 
+ii) 
+Merchant PSPs should update the same status to the merchants in online through API call. 
+iii) 
+Merchants should update the status to the respective customers. 
+iv) 
+API call is applicable for both online / offline Acquiring scenario.  
+ 
+Thus, the proposed process shall hep the merchants in providing the status of the transaction to their 
+customers instantly in online mode.  
+All member banks currently acquiring merchants for UPI payments are requested to make the

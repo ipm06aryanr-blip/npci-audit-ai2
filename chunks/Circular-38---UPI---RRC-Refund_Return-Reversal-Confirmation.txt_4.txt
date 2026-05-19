@@ -1,0 +1,29 @@
+RC-00 & RB 
+Applicable for TXN -Types 
+UC-UU-U3 & U2 
+Bulk Upload format 
+Same as existing .CSV file format of TCC/ RET (please 
+use appropriate adjustment flag & reason code for 
+raising RRC) 
+ 
+Effective Date: The penalty, as aforesaid, will be implemented with effect from 20th Nov., 
+2017. 
+All members are requested to take a note of the above and ensure to put in place proper 
+process so as to ensure compliance to NPCI guidelines of handling credit adjustments & 
+returns. Kindly disseminate the information contained herein to the officials concerned. 
+For any further clarification please contact the following official:- 
+Name 
+Email Id 
+Contact Number 
+Rosa Bagul 
+rosa.bagul@npci.org.in 
+07738180884 
+Achinto B 
+achinto.bupadhyay@npci.org.in  
+09477112085 
+Neha Kumari 
+neha.kumari@npci.org.in 
+09167852531 
+ 
+ 
+Yours faithfully,

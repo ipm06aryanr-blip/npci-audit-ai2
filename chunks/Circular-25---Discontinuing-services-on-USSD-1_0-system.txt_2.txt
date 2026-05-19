@@ -1,0 +1,14 @@
+(*99# ) and is known as USSD 2.0 (available on the existing number *99#). This functionality i.e. USSD 
+2.0 is launched along with BHIM on 30th December 2016. 
+In USSD 1.0 (existing *99#), 51 banks were live. Post the introduction of USSD 2.0, these banks have 
+started migrating to new system, after performing necessary migration process (Documentation & 
+certification). 41 banks have already moved to USSD 2.0 and remaining banks are in the process of 
+doing so. All the new members are on-boarded on USSD 2.0 only. NPCI has made both the systems 
+active (USSD 1.0 & 2.0) to facilitate this migration up to 31st July 2017.  
+USSD 1.0 system shall discontinue from 1st August 2017. Members are advised to take note of it and 
+circulate to their respective internal teams for timely migration to USSD 2.0 if not done so far. 
+Thanking you, 
+Yours faithfully, 
+ 
+Dilip Asbe 
+(Chief Operating Officer)

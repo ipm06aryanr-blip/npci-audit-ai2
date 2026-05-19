@@ -1,0 +1,18 @@
+systems. Some of the data like account number, can be shown in masked 
+format to the customer on the app as per existing UPI PG. Last 6 digits of the 
+Debit Card, Expiry date of the debit card, UPI PIN, Issuer OTP should not be 
+stored.  
+PSP Bank ownership & responsibility (Additional): 
+1. The App provider shall provide the required documentation including data flow 
+diagram, security details to PSP bank and NPCI. 
+2. The PSP bank must ensure that its board approves such PSP SDK arrangement, 
+since all the liability arising in case of any data breach, wrong authentication 
+etc. is borne by the PSP bank. The board resolution shall be submitted to NPCI 
+as part of onboarding process.   
+3. The PSP bank shall continue the authentication, encrypted SMS OTP verification 
+as detailed out in the current PSP SDK guidelines.  
+ 
+ 
+ 
+4. The bank must ensure that the system and app audit is performed to ensure 
+data integrity, encryption and the app security. This audit shall be done on

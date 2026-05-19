@@ -1,0 +1,46 @@
+Table of Content
+Section 
+Topic 
+Page No.
+1.
+Brand Mark
+
+2.
+Logo Usage
+17
+3.
+UPI ID
+36
+4.
+UPI PIN
+53
+5.
+UPI QR
+56
+6.
+UPI Onboarding Process: Consumer Journey
+61
+7.
+UPI AUTOPAY
+60
+8.
+Communication Guidelines
+87
+9.
+Disclaimer
+100
+The required logos or logo unit can be downloaded 
+from the Brand Centre of  the NPCI website.
+Direct Link: https://www.npci.org.in/brand-centre 
+If after reading the branding guidelines, you still 
+haven’t found the answer to your query,
+please contact us on: brand@npci.org.in
+Brand Mark & Usage
+
+Say hello to BHIM UPI, your one-stop payments solution and interface. 
+With one app and one tap, you can perform multiple actions easily and in a 
+hassle-free manner. Link multiple bank accounts, perform direct 
+bank-to-bank transfers, send and receive money, get instant alerts.
+It's safe. It's secure. It's seamless. It's BHIM UPI.
+UNIFIED PAYMENTS INTERFACE
+(UPI ID, UPI PIN, UPI FEATURES)

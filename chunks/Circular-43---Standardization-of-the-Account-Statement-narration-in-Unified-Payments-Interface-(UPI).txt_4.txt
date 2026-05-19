@@ -1,0 +1,33 @@
+internal requirement. 
+Sample narration in the bank account statement: 
+In Remitter Bank statement: 
+Date 
+Narration 
+Debit 
+Credi
+t 
+04/01/201
+8 
+UPI/DR/800412179072/BuntyG/IOBA/123412341234/Mutu
+al Fund 
+100.0
+0 
+ 
+ 
+In Beneficiary Bank statement 
+Date 
+Narration 
+Debit 
+Credit 
+04/01/2018 UPI/CR/800412179072/Rajesh/IBKL/567856785678/Mutual 
+Fund/ 
+ 
+100.00 
+ 
+All UPI members are requested to take note of the above recommendations and implement 
+the changes as suggested to ensure standardization in the account statement narration and 
+will help customers identify and reconcile UPI transactions. 
+Yours faithfully, 
+ 
+Dilip Asbe 
+(CEO In-Charge)

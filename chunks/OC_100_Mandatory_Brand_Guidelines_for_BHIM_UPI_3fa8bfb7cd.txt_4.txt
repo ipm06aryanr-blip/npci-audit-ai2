@@ -1,0 +1,24 @@
+12 pixels
+UPI
+x hight
+1/2x hight
+1/2x hight
+For digital communication only: In case of space 
+constraints, the Fast-Forward symbols along with 
+UPI in text form would represent the UPI logo unit
+In such a case, the size of UPI symbol must not 
+be smaller than 12 pixels.
+POWERED BY
+25 pixels
+9
+The BHIM UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+The BHIM UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+
+For digital communication only: In case of space 
+constraints, the Fast-Forward symbols along with 
+BHIM in text form would represent the BHIM logo 
+unit In such a case, the sized of BHIM symbol 
+must not be smaller than 12 pixels.
+12 pixels

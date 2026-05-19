@@ -1,0 +1,25 @@
+TPAP should reduce naturally. In the event the market share is reducing and if it appears that it 
+may take longer than the exemption period as anticipated, NPCI may offer additional time at its 
+own discretion. In case the market share is not reducing, NPCI shall discuss the modalities with 
+the TPAP to achieve the compliance including putting restrictions on the new customer on-
+boarding. In any case, it will be ensured that transactions of the existing users are not declined to 
+the extent possible. 
+ 
+ 
+   
+ 
+ 
+ 
+   
+ 
+ 
+V1.0 
+7/9 
+  
+If the breach is not remedied during the Exemption, then NPCI reserves the right to:  
+i. In case TPAP does not remedy the NPCI direction, NPCI shall levy the penalty as per    
+the provisions of “Action on non-compliance” mentioned below; and/or 
+ii. Block the new user on-boarding for the concerning TPAP, from its central UPI system 
+Customer Communication 
+ 
+TPAP and PSP Bank(s) shall communicate following as illustrative message to new customers

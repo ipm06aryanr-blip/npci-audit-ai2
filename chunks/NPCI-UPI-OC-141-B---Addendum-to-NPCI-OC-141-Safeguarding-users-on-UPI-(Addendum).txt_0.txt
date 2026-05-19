@@ -1,0 +1,17 @@
+N i='C/1 
+NATIONAL PAYMENTS CORPORATION OF IND/A 
+NPCI/UPI/OC-141 B/2022-23(Addendum) 
+21 st October 2022 
+To, 
+All UPI Members - Banks, PSPs & Third Party Applications 
+Madam I Sir, 
+f 
+1Subject: Addendum to NPCI/UPI/OC-141/2021-22 Safeguarding users on UPI 
+. NPCI has issued NPCI/UPI/OC-141/2021-22 and NPCI/UPI/OC-141A/2022-23 to keep product-
+level controls for safeguarding UPI users. To further extend the scope for providing a safe and 
+secure experience to the UPI users, the following changes are being introduced. 
+Acquirers onboarding merchants who are dealing with the purchase and sale of digital goods like 
+gold, silver, and other precious metals and payment mode is through UPI should process it under 
+the MCC 5412. For this MCC, UPI collect request (initiation mode 00 with sub type 'collect') will 
+not be allowed from 10th November 2022 for android users. 
+Members are also instructed to refer to NPCI/UPI/Rupay/OC 118/2021-22- Reference Guidelines

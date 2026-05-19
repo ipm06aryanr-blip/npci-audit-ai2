@@ -1,0 +1,32 @@
+Pay
+Request
+Type message
+APP LOGO
+UPI ID: user@upihandle
+APP LOGO
+UPI ID: user@upihandle
+APP LOGO
+UPI ID: user@upihandle
+57
+Check Balance
+On Check Balance, ‘Powered by UPI’ unit should be displayed 
+at the bottom with the size of 50 pixels in height. 
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.
+No part of the mnemonics or artwork may be reproduced by any means or in any form whatsoever without written permission.
+Check Balance Screen
+10:10
+POWERED BY
+Bank account – Check Balance
+Account no:
+xxxxxx
+Check Balance
+50 pixels
+APP LOGO
+UPI ID: user@upihandle
+58
+Powered by UPI Logo must be used at all places 
+where UPI API’s are being called.
+Contact Conversation page
+Whichever mode user intiates the UPI payment, 
+UPI ID should be present in the conversation box. 
+The UPI and Fast-Forward mnemonics are the copyrighted and trademarked properties of NPCI.

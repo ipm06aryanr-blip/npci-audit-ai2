@@ -1,0 +1,21 @@
+the handle allocation rule shall require explicit approval of NPCI. In case the handle of 
+the default bank cannot be made available for technical reasons, the handle may be 
+allocated through the fair allocation method. 
+14. PSP Bank shall ensure that the customer has the choice of changing the handle later 
+through appropriate enablement in the app. 
+15. PSP Bank shall ensure that the third party app provider shall take explicit customer 
+consent for using transaction data for themselves and/or PSP bank for the purposes 
+such 
+as 
+- 
+Cross-Sell/ 
+Promotions/ 
+Offers/ 
+Value 
+Added 
+Services/Increasing 
+Transactions/Better User Experience/such other purposes as shall be approved by NPCI 
+in writing.  
+16. PSP Bank shall ensure that the third party app provider will ensure that no application 
+version with significant UPI related changes shall go live without a formal assessment 
+and approval, excluding minor changes and bug fixes. Any major change can be

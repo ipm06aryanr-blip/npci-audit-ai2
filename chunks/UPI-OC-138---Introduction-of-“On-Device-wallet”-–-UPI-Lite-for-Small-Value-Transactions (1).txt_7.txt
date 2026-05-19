@@ -1,0 +1,13 @@
+2. The User can disable UPI Lite services at any point of time from the UPI App and on disabling UPI Lite, 
+balance funds will be credited back to the User’s account in real-time 
+ 
+By UPI App, for UPI Lite transaction 
+1. UPI Lite transactions will be processed without any UPI PIN. However, the app authentication shall be used 
+before using the UPI lite, unless this feature has been disabled by the User 
+2. The available balance shall be displayed to the User on the UPI App’s home page at all the times 
+Post Transaction  
+1. The UPI App shall display the relevant status of each UPI Lite transaction (pertaining to enablement, top-up, 
+and disable UPI Lite), on the transaction history page of the App with clear distinction from UPI online 
+transactions.  
+2. In case of any disputes, the UPI App shall display status of the funds being credited to the User's bank 
+account as per the dispute management process.

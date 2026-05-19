@@ -1,0 +1,12 @@
+balance inquiry.   
+6. The UPI App shall, by default, use UPI Lite balance for transactions having value of less than or equal to Rs 
+200/- excluding peer-to-peer collect request transactions.  
+7. The User shall receive the consolidated debit SMS for financial transactions at regular intervals after the 
+transactions are presented to the User’s bank. 
+8. The UPI App shall mandatorily enable the User to raise disputes for UPI Lite based transactions. Members 
+shall ensure that online dispute resolution (ODR) functionality is made available for UPI Lite transactions.  
+9. The issuing bank shall also facilitate the handling of customer grievances after the transaction information 
+with respect to UPI Lite transactions is made available to these banks.  
+10. Instructions issued for “Harmonization of Turnaround Time” by RBI will be applicable to failed UPI Lite 
+transactions.  
+Members are also advised to refer to the aforementioned RBI framework on small value payments in offline

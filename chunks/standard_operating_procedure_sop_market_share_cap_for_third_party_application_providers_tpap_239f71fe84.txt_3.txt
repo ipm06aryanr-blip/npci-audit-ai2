@@ -1,0 +1,12 @@
+inception. 
+ 
+When we look at the future of UPI, reaching to billion transactions a day, there is a need to 
+smoothen out all the transactions in the UPI ecosystem. One such effort was UPI multi-bank 
+model, which was implemented to mitigate the risks on the banks by means of mandating large 
+TPAPs for the UPI access. The suggested measures in this SOP, shall also encourage the new 
+players to increase their volumes in UPI, so as to even out the distribution of market share among 
+all participants. While, recently UPI has admitted some of the new players, there have been 
+significant contributions by the existing players who have put in lot of efforts to grow the UPI 
+ecosystem. Keeping this on mind, the Volume Cap Circular provides for two (2) years’ timeline to 
+the existing TPAPs exceeding the Volume Cap for compliance. This timeline provides for sufficient 
+time to review the balance in the UPI market share with the emergence of new players and do

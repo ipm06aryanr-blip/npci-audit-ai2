@@ -1,0 +1,22 @@
+model and the 3rd party Apps/merchants under the Single SDK model may please note the 
+following guidelines for compliance: 
+ 
+Customer account Balance is classified as customer sensitive data and accordingly, the 
+following is being advised: 
+ 
+a. PSP Banks, Large 3rd party players, 3rd party Apps under Single SDK model 
+shall provide Balance Inquiry option to the customer as an “optional 
+feature” basis their internal risk assessment.  
+b. Customer account balance shall not be stored or put to any use by either 
+the PSP Bank or 3rd party for any purposes (Internal or external). The 
+storage of customer account balance is not permitted even in encrypted 
+format at the PSP & 3rd party systems / Apps. 
+ 
+PSP Banks may note the same for compliance & ensure it is a part of their contract with all 
+3rd part players. 
+Kindly bring the contents of this circular to the notice of all concerned. 
+Yours faithfully, 
+ 
+ 
+Vishal Kanvaty 
+SVP & Head – Products & Innovations

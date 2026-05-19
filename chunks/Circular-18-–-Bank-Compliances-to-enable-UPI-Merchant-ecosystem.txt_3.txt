@@ -1,0 +1,18 @@
+the Bank PSPs scanning such QR are not able to populate and pass the parameters. 
+ 
+2.) Impact: Lack of uniformity in the PSP app functionality may lead to poor customer experience 
+across eco system, resist wide merchant adoption and may lead to reconciliation challenges 
+and payment confirmation. 
+ 
+3.) Responsibility of the member Banks in the UPI ecosystem:  
+ 
+a) The Acquiring PSP should ensure that the following critical business parameters for 
+Dynamic or Static QR code. 
+ 
+<TABLE 1> - QR (Key Deep Linking parameters) 
+ 
+PN: Mentioned above are only the critical parameters for Merchant transactions. There are other additional 
+parameters which are optional and can be referred to, from the Deep Linking Specs provided to member banks. 
+ 
+b) It is a prudent norm that elements present in QR are scanned and passed back to the 
+issuing app. PSPs should not apply any preferred criteria in this regard.

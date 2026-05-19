@@ -1,0 +1,13 @@
+annual basis.  
+6. PSP Banks shall have the full right to conduct audit on the third party App provider 
+infrastructure, systems, application and database for components related to UPI.  
+7. PSP Bank shall ensure that it will facilitate RBI, NPCI or any other formally appointed 
+agencies of RBI/ NPCI, to access the data and carry out audits of Bank and third party 
+app provider, as and when required.  
+8. The PSP bank must have agreement with third party App provider for any liability 
+arising out of data breach/fraud/compromise at the app or third party app provider‟s 
+system. Further the agreement/ arrangement between bank and third party app 
+provider must include compliance to Informational Privacy (as aspect of Right to 
+Privacy), IT act, Payment and Settlement System Act, UPI Procedural guidelines or any 
+such future law and guidelines issued by government of India, RBI, any other regulator 
+in India and NPCI.

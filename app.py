@@ -95,6 +95,57 @@ def load_collection():
 
         import os
 
+        folder_path = "chunks"
+
+        documents = []
+
+        for file in os.listdir(folder_path):
+
+            if file.endswith(".txt"):
+
+                with open(
+                    os.path.join(folder_path, file),
+                    "r",
+                    encoding="utf-8"
+                ) as f:
+
+                    text = f.read()
+
+                    documents.append(text[:4000])
+
+        embeddings = embedding_model.encode(
+            documents
+        ).tolist()
+
+        collection.add(
+            documents=documents,
+            embeddings=embeddings,
+            ids=[
+                f"doc_{i}"
+                for i in range(len(documents))
+            ]
+        )
+
+    return collection
+
+    client_db = chromadb.PersistentClient(
+        path="./db"
+    )
+
+    try:
+
+        collection = client_db.get_collection(
+            name="npci_audit"
+        )
+
+    except:
+
+        collection = client_db.create_collection(
+            name="npci_audit"
+        )
+
+        import os
+
 folder_path = "chunks"
 
 documents = []

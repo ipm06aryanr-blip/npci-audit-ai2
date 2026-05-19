@@ -1,4 +1,3 @@
-# deployment refresh
 import streamlit as st
 import chromadb
 from sentence_transformers import SentenceTransformer
@@ -13,19 +12,13 @@ st.set_page_config(
     layout="wide"
 )
 
-# -----------------------------------s
+# -----------------------------------
 # GROQ CLIENT
 # -----------------------------------
 
-import streamlit as st
-import chromadb
-from sentence_transformers import SentenceTransformer
-from groq import Groq
-
-
 client = Groq(
-    api_key=st.secrets["GROQ_API_KEY"])
-
+    api_key=st.secrets["GROQ_API_KEY"]
+)
 
 # -----------------------------------
 # SIDEBAR
@@ -65,32 +58,83 @@ st.markdown(
 )
 
 # -----------------------------------
-# LOAD EMBEDDING MODEL
+# EMBEDDING MODEL
 # -----------------------------------
 
 @st.cache_resource
 def load_embedding_model():
 
     return SentenceTransformer(
-        'all-MiniLM-L6-v2'
+        "all-MiniLM-L6-v2"
     )
 
 embedding_model = load_embedding_model()
 
 # -----------------------------------
-# LOAD CHROMADB
+# CHROMADB
 # -----------------------------------
 
 @st.cache_resource
 def load_collection():
 
     client_db = chromadb.PersistentClient(
-        path="../db"
+        path="./db"
     )
 
-    return client_db.get_collection(
-        name="npci_audit"
-    )
+    try:
+
+        collection = client_db.get_collection(
+            name="npci_audit"
+        )
+
+    except:
+
+        collection = client_db.create_collection(
+            name="npci_audit"
+        )
+
+        sample_docs = [
+            """
+            NPCI Circular UPI-OC-170 (2024)
+
+            UPI Lite transactions must have proper transaction monitoring controls.
+            Banks and PSPs must maintain audit trails and reconciliation logs.
+            Mapper verification must be periodically validated.
+            Unauthorized mapper updates must be monitored and escalated.
+            """,
+
+            """
+            NPCI Circular UPI-OC-171 (2024)
+
+            TPAP applications must implement strong customer authentication.
+            Periodic risk reviews and fraud monitoring controls are mandatory.
+            Failed transaction logs must be retained for audit review.
+            """,
+
+            """
+            NPCI Circular UPI-OC-172 (2024)
+
+            UPI Mapper controls should include validation checks, maker-checker approval,
+            reconciliation processes, and access control reviews.
+            Audit logs should be preserved for minimum retention period.
+            """
+        ]
+
+        embeddings = embedding_model.encode(
+            sample_docs
+        ).tolist()
+
+        collection.add(
+            documents=sample_docs,
+            embeddings=embeddings,
+            ids=[
+                "doc1",
+                "doc2",
+                "doc3"
+            ]
+        )
+
+    return collection
 
 collection = load_collection()
 
@@ -113,12 +157,10 @@ if search and query:
 
     with st.spinner("Searching regulations..."):
 
-        # Query embedding
         query_embedding = embedding_model.encode(
             query
         ).tolist()
 
-        # Vector search
         results = collection.query(
             query_embeddings=[query_embedding],
             n_results=2
@@ -126,9 +168,8 @@ if search and query:
 
         documents = results["documents"][0]
 
-        # Trim for speed
         trimmed_docs = [
-            doc[:1200]
+            doc[:1500]
             for doc in documents
         ]
 

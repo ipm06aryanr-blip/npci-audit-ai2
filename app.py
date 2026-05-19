@@ -1,9 +1,11 @@
 import streamlit as st
-import chromadb
-from sentence_transformers import SentenceTransformer
 from groq import Groq
 import os
 import shutil
+
+from whoosh.index import create_in, open_dir
+from whoosh.fields import Schema, TEXT, ID
+from whoosh.qparser import MultifieldParser
 
 # ---------------------------------------------------
 # PAGE CONFIG
@@ -46,8 +48,22 @@ domain = st.sidebar.selectbox(
 st.sidebar.markdown("---")
 
 st.sidebar.success(
-    "Hybrid Retrieval Enabled"
+    "BM25 Retrieval Enabled"
 )
+
+# ---------------------------------------------------
+# REBUILD INDEX BUTTON
+# ---------------------------------------------------
+
+if st.sidebar.button("Rebuild Search Index"):
+
+    if os.path.exists("indexdir"):
+
+        shutil.rmtree("indexdir")
+
+    st.sidebar.success(
+        "Search index deleted. Refresh app."
+    )
 
 # ---------------------------------------------------
 # MAIN TITLE
@@ -60,99 +76,60 @@ st.markdown(
 )
 
 # ---------------------------------------------------
-# LOAD EMBEDDING MODEL
+# CREATE / LOAD SEARCH INDEX
 # ---------------------------------------------------
 
 @st.cache_resource
-def load_embedding_model():
+def create_search_index():
 
-    return SentenceTransformer(
-        "all-MiniLM-L6-v2"
+    schema = Schema(
+        title=ID(stored=True),
+        content=TEXT(stored=True)
     )
-
-embedding_model = load_embedding_model()
-
-# ---------------------------------------------------
-# RESET DATABASE BUTTON
-# ---------------------------------------------------
-
-if st.sidebar.button("Rebuild Database"):
-
-    if os.path.exists("db"):
-
-        shutil.rmtree("db")
-
-    st.sidebar.success(
-        "Database deleted. Refresh app."
-    )
-
-# ---------------------------------------------------
-# LOAD COLLECTION
-# ---------------------------------------------------
-
-@st.cache_resource
-def load_collection():
-
-    client_db = chromadb.PersistentClient(
-        path="./db"
-    )
-
-    collection_name = "npci_audit"
-
-    existing = [
-        col.name
-        for col in client_db.list_collections()
-    ]
 
     # ---------------------------------------------------
-    # LOAD EXISTING COLLECTION
+    # CREATE INDEX
     # ---------------------------------------------------
 
-    if collection_name in existing:
+    if not os.path.exists("indexdir"):
 
-        return client_db.get_collection(
-            name=collection_name
+        os.mkdir("indexdir")
+
+        ix = create_in(
+            "indexdir",
+            schema
         )
 
-    # ---------------------------------------------------
-    # CREATE NEW COLLECTION
-    # ---------------------------------------------------
+        writer = ix.writer()
 
-    collection = client_db.create_collection(
-        name=collection_name
-    )
+        chunk_folder = "chunks"
 
-    folder_path = "chunks"
+        if os.path.exists(chunk_folder):
 
-    documents = []
-    ids = []
+            files = os.listdir(chunk_folder)
 
-    if os.path.exists(folder_path):
+            for file in files:
 
-        files = os.listdir(folder_path)
+                if file.endswith(".txt"):
 
-        counter = 0
+                    file_path = os.path.join(
+                        chunk_folder,
+                        file
+                    )
 
-        for file in files:
+                    try:
 
-            if file.endswith(".txt"):
+                        with open(
+                            file_path,
+                            "r",
+                            encoding="utf-8"
+                        ) as f:
 
-                file_path = os.path.join(
-                    folder_path,
-                    file
-                )
+                            text = f.read()
 
-                try:
-
-                    with open(
-                        file_path,
-                        "r",
-                        encoding="utf-8"
-                    ) as f:
-
-                        text = f.read()
-
-                    if len(text.strip()) > 50:
+                        # -----------------------------------
+                        # TOPIC DETECTION
+                        # -----------------------------------
 
                         filename_lower = file.lower()
 
@@ -164,9 +141,6 @@ def load_collection():
                         elif "cashback" in filename_lower:
                             topic = "Cashback"
 
-                        elif "microatm" in filename_lower:
-                            topic = "MicroATM"
-
                         elif "fraud" in filename_lower:
                             topic = "Fraud Monitoring"
 
@@ -176,62 +150,43 @@ def load_collection():
                         elif "mapper" in filename_lower:
                             topic = "UPI Mapper"
 
+                        elif "microatm" in filename_lower:
+                            topic = "MicroATM"
+
                         elif "upi" in filename_lower:
                             topic = "UPI"
-
-                        circular_name = file.replace(
-                            ".txt",
-                            ""
-                        )
 
                         structured_text = f"""
 TOPIC: {topic}
 
-CIRCULAR: {circular_name}
-
-SOURCE FILE: {file}
+CIRCULAR: {file}
 
 REGULATORY EXCERPT:
-{text[:1500]}
+{text}
 """
 
-                        documents.append(
-                            structured_text
+                        writer.add_document(
+                            title=file,
+                            content=structured_text
                         )
 
-                        ids.append(
-                            f"doc_{counter}"
-                        )
+                    except Exception:
 
-                        counter += 1
+                        pass
 
-                except Exception:
-
-                    pass
+        writer.commit()
 
     # ---------------------------------------------------
-    # CREATE EMBEDDINGS
+    # LOAD INDEX
     # ---------------------------------------------------
 
-    if len(documents) > 0:
-
-        embeddings = embedding_model.encode(
-            documents
-        ).tolist()
-
-        collection.add(
-            documents=documents,
-            embeddings=embeddings,
-            ids=ids
-        )
-
-    return collection
+    return open_dir("indexdir")
 
 # ---------------------------------------------------
-# INITIALIZE COLLECTION
+# INITIALIZE INDEX
 # ---------------------------------------------------
 
-collection = load_collection()
+ix = create_search_index()
 
 # ---------------------------------------------------
 # USER INPUT
@@ -239,7 +194,7 @@ collection = load_collection()
 
 query = st.text_input(
     "Enter Audit Control",
-    placeholder="Example: KYC, Cashback regulation, UPI Mapper"
+    placeholder="Example: KYC, Cashback regulation, TPAP market share"
 )
 
 search = st.button("Search")
@@ -252,89 +207,39 @@ if search and query:
 
     with st.spinner("Searching regulations..."):
 
-        all_docs = collection.get()
+        documents = []
 
-        filtered_docs = []
+        with ix.searcher() as searcher:
 
-        query_words = query.lower().split()
+            parser = MultifieldParser(
+                ["content", "title"],
+                schema=ix.schema
+            )
 
-        # ---------------------------------------------------
-        # KEYWORD FILTERING
-        # ---------------------------------------------------
+            myquery = parser.parse(query)
 
-        for doc in all_docs["documents"]:
+            results = searcher.search(
+                myquery,
+                limit=5
+            )
 
-            score = 0
+            for r in results:
 
-            doc_lower = doc.lower()
-
-            # strong topic boost
-            if query.lower() in doc_lower:
-                score += 5
-
-            for word in query_words:
-
-                if word in doc_lower:
-                    score += 1
-
-            if score >= 1:
-
-                filtered_docs.append(doc)
+                documents.append(
+                    r["content"]
+                )
 
         # ---------------------------------------------------
-        # NO MATCH FOUND
+        # NO RESULTS
         # ---------------------------------------------------
 
-        if len(filtered_docs) == 0:
+        if len(documents) == 0:
 
             st.error(
                 "No relevant regulatory circular found."
             )
 
             st.stop()
-
-        # ---------------------------------------------------
-        # SEMANTIC RANKING
-        # ---------------------------------------------------
-
-        doc_embeddings = embedding_model.encode(
-            filtered_docs
-        ).tolist()
-
-        query_embedding = embedding_model.encode(
-            query
-        ).tolist()
-
-        similarities = []
-
-        for i, emb in enumerate(doc_embeddings):
-
-            similarity = sum(
-                [
-                    a * b
-                    for a, b in zip(
-                        query_embedding,
-                        emb
-                    )
-                ]
-            )
-
-            similarities.append(
-                (
-                    similarity,
-                    filtered_docs[i]
-                )
-            )
-
-        similarities.sort(
-            reverse=True,
-            key=lambda x: x[0]
-        )
-
-        documents = [
-            x[1]
-            for x in similarities[:3]
-        ]
 
         # ---------------------------------------------------
         # SHOW RETRIEVED CLAUSES
@@ -344,23 +249,23 @@ if search and query:
             "Retrieved Regulatory Clauses"
         )
 
-        for i, doc in enumerate(documents):
-
-            st.info(
-                f"Clause {i+1}\n\n{doc[:1500]}"
-            )
-
-        # ---------------------------------------------------
-        # CONTEXT
-        # ---------------------------------------------------
-
         trimmed_docs = []
 
-        for doc in documents:
+        for i, doc in enumerate(documents):
+
+            trimmed_doc = doc[:2000]
 
             trimmed_docs.append(
-                doc[:1500]
+                trimmed_doc
             )
+
+            st.info(
+                f"Clause {i+1}\n\n{trimmed_doc}"
+            )
+
+        # ---------------------------------------------------
+        # CREATE CONTEXT
+        # ---------------------------------------------------
 
         context = "\n\n".join(trimmed_docs)
 
@@ -428,7 +333,7 @@ FORMAT:
         answer = response.choices[0].message.content
 
     # ---------------------------------------------------
-    # DISPLAY FINAL RESPONSE
+    # FINAL OUTPUT
     # ---------------------------------------------------
 
     st.success(

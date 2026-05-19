@@ -42,9 +42,11 @@ domain = st.sidebar.selectbox(
 
 st.sidebar.markdown("---")
 
-st.sidebar.subheader("Latest Circulars")
+st.sidebar.subheader("Retrieval Engine")
 
-st.sidebar.write("• Dynamic retrieval enabled")
+st.sidebar.success(
+    "Hybrid Retrieval Enabled"
+)
 
 # ---------------------------------------------------
 # MAIN TITLE
@@ -57,7 +59,7 @@ st.markdown(
 )
 
 # ---------------------------------------------------
-# EMBEDDING MODEL
+# LOAD EMBEDDING MODEL
 # ---------------------------------------------------
 
 @st.cache_resource
@@ -87,9 +89,9 @@ def load_collection():
         for col in client_db.list_collections()
     ]
 
-    # -----------------------------------
+    # ---------------------------------------------------
     # LOAD EXISTING COLLECTION
-    # -----------------------------------
+    # ---------------------------------------------------
 
     if collection_name in existing:
 
@@ -97,9 +99,9 @@ def load_collection():
             name=collection_name
         )
 
-    # -----------------------------------
+    # ---------------------------------------------------
     # CREATE NEW COLLECTION
-    # -----------------------------------
+    # ---------------------------------------------------
 
     collection = client_db.create_collection(
         name=collection_name
@@ -148,7 +150,7 @@ CIRCULAR: {circular_name}
 SOURCE FILE: {file}
 
 REGULATORY EXCERPT:
-{text[:1200]}
+{text[:1500]}
 """
 
                         documents.append(
@@ -165,9 +167,9 @@ REGULATORY EXCERPT:
 
                     pass
 
-    # -----------------------------------
+    # ---------------------------------------------------
     # CREATE EMBEDDINGS
-    # -----------------------------------
+    # ---------------------------------------------------
 
     if len(documents) > 0:
 
@@ -208,73 +210,103 @@ if search and query:
 
     with st.spinner("Searching regulations..."):
 
+        # ---------------------------------------------------
+        # GET ALL DOCS
+        # ---------------------------------------------------
+
+        all_docs = collection.get()
+
+        # ---------------------------------------------------
+        # KEYWORD FILTERING
+        # ---------------------------------------------------
+
+        filtered_docs = []
+
+        query_words = query.lower().split()
+
+        for doc in all_docs["documents"]:
+
+            score = 0
+
+            doc_lower = doc.lower()
+
+            for word in query_words:
+
+                if word in doc_lower:
+
+                    score += 1
+
+            # stricter keyword filtering
+            if score >= 2:
+
+                filtered_docs.append(doc)
+
+        # ---------------------------------------------------
+        # FALLBACK
+        # ---------------------------------------------------
+
+        if len(filtered_docs) == 0:
+
+            filtered_docs = all_docs["documents"][:10]
+
+        # ---------------------------------------------------
+        # SEMANTIC RANKING
+        # ---------------------------------------------------
+
+        doc_embeddings = embedding_model.encode(
+            filtered_docs
+        ).tolist()
+
         query_embedding = embedding_model.encode(
             query
         ).tolist()
 
-        all_docs = collection.get()
+        similarities = []
 
-filtered_docs = []
+        for i, emb in enumerate(doc_embeddings):
 
-query_words = query.lower().split()
+            similarity = sum(
+                [
+                    a * b
+                    for a, b in zip(
+                        query_embedding,
+                        emb
+                    )
+                ]
+            )
 
-for doc in all_docs["documents"]:
+            similarities.append(
+                (
+                    similarity,
+                    filtered_docs[i]
+                )
+            )
 
-    score = 0
+        similarities.sort(
+            reverse=True,
+            key=lambda x: x[0]
+        )
 
-    doc_lower = doc.lower()
-
-    for word in query_words:
-
-        if word in doc_lower:
-
-            score += 1
-
-    if score >= 2:
-
-        filtered_docs.append(doc)
-
-# fallback if nothing found
-if len(filtered_docs) == 0:
-
-    filtered_docs = all_docs["documents"][:5]
-
-# semantic ranking
-doc_embeddings = embedding_model.encode(
-    filtered_docs
-).tolist()
-
-query_embedding = embedding_model.encode(
-    query
-).tolist()
-
-similarities = []
-
-for i, emb in enumerate(doc_embeddings):
-
-    similarity = sum(
-        [
-            a * b
-            for a, b in zip(query_embedding, emb)
+        documents = [
+            x[1]
+            for x in similarities[:3]
         ]
-    )
 
-    similarities.append(
-        (similarity, filtered_docs[i])
-    )
+        # ---------------------------------------------------
+        # DEBUG
+        # ---------------------------------------------------
 
-similarities.sort(
-    reverse=True,
-    key=lambda x: x[0]
-)
+        st.subheader("Retrieved Regulatory Clauses")
 
-documents = [
-    x[1]
-    for x in similarities[:3]
-]
-        documents = results["documents"][0]
-        st.write("DEBUG RETRIEVED DOCUMENTS")
-       
+        for i, doc in enumerate(documents):
+
+            st.info(
+                f"Clause {i+1}\n\n{doc[:1500]}"
+            )
+
+        # ---------------------------------------------------
+        # CONTEXT
+        # ---------------------------------------------------
 
         trimmed_docs = []
 
@@ -286,9 +318,9 @@ documents = [
 
         context = "\n\n".join(trimmed_docs)
 
-        # -----------------------------------
+        # ---------------------------------------------------
         # PROMPT
-        # -----------------------------------
+        # ---------------------------------------------------
 
         prompt = f"""
 You are an NPCI regulatory audit assistant.
@@ -333,9 +365,9 @@ FORMAT:
 # Missing Information / Gaps
 """
 
-        # -----------------------------------
+        # ---------------------------------------------------
         # GROQ RESPONSE
-        # -----------------------------------
+        # ---------------------------------------------------
 
         response = client.chat.completions.create(
             model="llama-3.1-8b-instant",
@@ -349,23 +381,9 @@ FORMAT:
 
         answer = response.choices[0].message.content
 
-    # -----------------------------------
-    # DISPLAY RETRIEVED CLAUSES FIRST
-    # -----------------------------------
-
-    st.subheader(
-        "Retrieved Regulatory Clauses"
-    )
-
-    for i, doc in enumerate(trimmed_docs):
-
-        st.info(
-            f"Clause {i+1}\n\n{doc}"
-        )
-
-    # -----------------------------------
-    # DISPLAY AI RESPONSE
-    # -----------------------------------
+    # ---------------------------------------------------
+    # DISPLAY FINAL RESPONSE
+    # ---------------------------------------------------
 
     st.success(
         "Relevant regulations identified"

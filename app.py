@@ -44,9 +44,7 @@ st.sidebar.markdown("---")
 
 st.sidebar.subheader("Latest Circulars")
 
-st.sidebar.write("• UPI-OC-170")
-st.sidebar.write("• UPI-OC-171")
-st.sidebar.write("• UPI-OC-172")
+st.sidebar.write("• Dynamic retrieval enabled")
 
 # ---------------------------------------------------
 # MAIN TITLE
@@ -59,22 +57,20 @@ st.markdown(
 )
 
 # ---------------------------------------------------
-# LOAD EMBEDDING MODEL
+# EMBEDDING MODEL
 # ---------------------------------------------------
 
 @st.cache_resource
 def load_embedding_model():
 
-    model = SentenceTransformer(
+    return SentenceTransformer(
         "all-MiniLM-L6-v2"
     )
-
-    return model
 
 embedding_model = load_embedding_model()
 
 # ---------------------------------------------------
-# LOAD / CREATE CHROMADB
+# LOAD COLLECTION
 # ---------------------------------------------------
 
 @st.cache_resource
@@ -86,28 +82,24 @@ def load_collection():
 
     collection_name = "npci_audit"
 
-    existing_collections = client_db.list_collections()
-
-    existing_names = [
+    existing = [
         col.name
-        for col in existing_collections
+        for col in client_db.list_collections()
     ]
 
-    # ---------------------------------------------------
-    # IF COLLECTION EXISTS
-    # ---------------------------------------------------
+    # -----------------------------------
+    # LOAD EXISTING COLLECTION
+    # -----------------------------------
 
-    if collection_name in existing_names:
+    if collection_name in existing:
 
-        collection = client_db.get_collection(
+        return client_db.get_collection(
             name=collection_name
         )
 
-        return collection
-
-    # ---------------------------------------------------
-    # CREATE COLLECTION
-    # ---------------------------------------------------
+    # -----------------------------------
+    # CREATE NEW COLLECTION
+    # -----------------------------------
 
     collection = client_db.create_collection(
         name=collection_name
@@ -117,10 +109,6 @@ def load_collection():
 
     documents = []
     ids = []
-
-    # ---------------------------------------------------
-    # READ ALL CHUNK FILES
-    # ---------------------------------------------------
 
     if os.path.exists(folder_path):
 
@@ -139,30 +127,22 @@ def load_collection():
 
                 try:
 
-            with open(
-    file_path,
-    "r",
-    encoding="utf-8"
-) as f:
+                    with open(
+                        file_path,
+                        "r",
+                        encoding="utf-8"
+                    ) as f:
 
-    text = f.read()
+                        text = f.read()
 
-    if len(text.strip()) > 50:
+                    if len(text.strip()) > 50:
 
-        # -----------------------------------
-        # EXTRACT METADATA FROM FILE NAME
-        # -----------------------------------
+                        circular_name = file.replace(
+                            ".txt",
+                            ""
+                        )
 
-        circular_name = file.replace(
-            ".txt",
-            ""
-        )
-
-        # -----------------------------------
-        # CREATE STRUCTURED DOCUMENT
-        # -----------------------------------
-
-        structured_text = f"""
+                        structured_text = f"""
 CIRCULAR: {circular_name}
 
 SOURCE FILE: {file}
@@ -171,25 +151,23 @@ REGULATORY EXCERPT:
 {text[:1200]}
 """
 
-        documents.append(
-            structured_text
-        )
+                        documents.append(
+                            structured_text
+                        )
 
-                            ids.append(
-                                f"doc_{counter}"
-                            )
+                        ids.append(
+                            f"doc_{counter}"
+                        )
 
-                            counter += 1
+                        counter += 1
 
-                except Exception as e:
+                except Exception:
 
-                    st.warning(
-                        f"Could not read {file}"
-                    )
+                    pass
 
-    # ---------------------------------------------------
+    # -----------------------------------
     # CREATE EMBEDDINGS
-    # ---------------------------------------------------
+    # -----------------------------------
 
     if len(documents) > 0:
 
@@ -206,7 +184,7 @@ REGULATORY EXCERPT:
     return collection
 
 # ---------------------------------------------------
-# LOAD COLLECTION
+# INITIALIZE COLLECTION
 # ---------------------------------------------------
 
 collection = load_collection()
@@ -230,17 +208,9 @@ if search and query:
 
     with st.spinner("Searching regulations..."):
 
-        # ---------------------------------------------------
-        # QUERY EMBEDDING
-        # ---------------------------------------------------
-
         query_embedding = embedding_model.encode(
             query
         ).tolist()
-
-        # ---------------------------------------------------
-        # VECTOR SEARCH
-        # ---------------------------------------------------
 
         results = collection.query(
             query_embeddings=[query_embedding],
@@ -248,10 +218,6 @@ if search and query:
         )
 
         documents = results["documents"][0]
-
-        # ---------------------------------------------------
-        # TRIM DOCUMENTS
-        # ---------------------------------------------------
 
         trimmed_docs = []
 
@@ -263,9 +229,9 @@ if search and query:
 
         context = "\n\n".join(trimmed_docs)
 
-        # ---------------------------------------------------
+        # -----------------------------------
         # PROMPT
-        # ---------------------------------------------------
+        # -----------------------------------
 
         prompt = f"""
 You are an NPCI regulatory audit assistant.
@@ -310,9 +276,9 @@ FORMAT:
 # Missing Information / Gaps
 """
 
-        # ---------------------------------------------------
+        # -----------------------------------
         # GROQ RESPONSE
-        # ---------------------------------------------------
+        # -----------------------------------
 
         response = client.chat.completions.create(
             model="llama-3.1-8b-instant",
@@ -326,17 +292,9 @@ FORMAT:
 
         answer = response.choices[0].message.content
 
-    # ---------------------------------------------------
-    # DISPLAY RESULTS
-    # ---------------------------------------------------
-
-    st.success(
-        "Relevant regulations identified"
-    )
-
-    st.subheader("AI Audit Response")
-
-    st.markdown(answer)
+    # -----------------------------------
+    # DISPLAY RETRIEVED CLAUSES FIRST
+    # -----------------------------------
 
     st.subheader(
         "Retrieved Regulatory Clauses"
@@ -347,3 +305,15 @@ FORMAT:
         st.info(
             f"Clause {i+1}\n\n{doc}"
         )
+
+    # -----------------------------------
+    # DISPLAY AI RESPONSE
+    # -----------------------------------
+
+    st.success(
+        "Relevant regulations identified"
+    )
+
+    st.subheader("AI Audit Response")
+
+    st.markdown(answer)

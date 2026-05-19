@@ -2,27 +2,28 @@ import streamlit as st
 import chromadb
 from sentence_transformers import SentenceTransformer
 from groq import Groq
+import os
 
-# -----------------------------------
+# ---------------------------------------------------
 # PAGE CONFIG
-# -----------------------------------
+# ---------------------------------------------------
 
 st.set_page_config(
     page_title="NPCI Audit AI",
     layout="wide"
 )
 
-# -----------------------------------
+# ---------------------------------------------------
 # GROQ CLIENT
-# -----------------------------------
+# ---------------------------------------------------
 
 client = Groq(
     api_key=st.secrets["GROQ_API_KEY"]
 )
 
-# -----------------------------------
+# ---------------------------------------------------
 # SIDEBAR
-# -----------------------------------
+# ---------------------------------------------------
 
 st.sidebar.title("NPCI Audit AI")
 
@@ -47,9 +48,9 @@ st.sidebar.write("• UPI-OC-170")
 st.sidebar.write("• UPI-OC-171")
 st.sidebar.write("• UPI-OC-172")
 
-# -----------------------------------
+# ---------------------------------------------------
 # MAIN TITLE
-# -----------------------------------
+# ---------------------------------------------------
 
 st.title("NPCI / RBI Audit AI")
 
@@ -57,22 +58,24 @@ st.markdown(
     "AI-powered internal audit assistant for NPCI and RBI regulations"
 )
 
-# -----------------------------------
-# EMBEDDING MODEL
-# -----------------------------------
+# ---------------------------------------------------
+# LOAD EMBEDDING MODEL
+# ---------------------------------------------------
 
 @st.cache_resource
 def load_embedding_model():
 
-    return SentenceTransformer(
+    model = SentenceTransformer(
         "all-MiniLM-L6-v2"
     )
 
+    return model
+
 embedding_model = load_embedding_model()
 
-# -----------------------------------
-# CHROMADB
-# -----------------------------------
+# ---------------------------------------------------
+# LOAD / CREATE CHROMADB
+# ---------------------------------------------------
 
 @st.cache_resource
 def load_collection():
@@ -81,88 +84,93 @@ def load_collection():
         path="./db"
     )
 
-    try:
+    collection_name = "npci_audit"
+
+    existing_collections = client_db.list_collections()
+
+    existing_names = [
+        col.name
+        for col in existing_collections
+    ]
+
+    # ---------------------------------------------------
+    # IF COLLECTION EXISTS
+    # ---------------------------------------------------
+
+    if collection_name in existing_names:
 
         collection = client_db.get_collection(
-            name="npci_audit"
+            name=collection_name
         )
 
-    except:
+        return collection
 
-        collection = client_db.create_collection(
-            name="npci_audit"
-        )
+    # ---------------------------------------------------
+    # CREATE COLLECTION
+    # ---------------------------------------------------
 
-        import os
+    collection = client_db.create_collection(
+        name=collection_name
+    )
 
-        folder_path = "chunks"
+    folder_path = "chunks"
 
-        documents = []
+    documents = []
+    ids = []
 
-        for file in os.listdir(folder_path):
+    # ---------------------------------------------------
+    # READ ALL CHUNK FILES
+    # ---------------------------------------------------
+
+    if os.path.exists(folder_path):
+
+        files = os.listdir(folder_path)
+
+        counter = 0
+
+        for file in files:
 
             if file.endswith(".txt"):
 
-                with open(
-                    os.path.join(folder_path, file),
-                    "r",
-                    encoding="utf-8"
-                ) as f:
+                file_path = os.path.join(
+                    folder_path,
+                    file
+                )
 
-                    text = f.read()
+                try:
 
-                    documents.append(text[:4000])
+                    with open(
+                        file_path,
+                        "r",
+                        encoding="utf-8"
+                    ) as f:
 
-        embeddings = embedding_model.encode(
-            documents
-        ).tolist()
+                        text = f.read()
 
-        collection.add(
-            documents=documents,
-            embeddings=embeddings,
-            ids=[
-                f"doc_{i}"
-                for i in range(len(documents))
-            ]
-        )
+                        # Skip empty docs
+                        if len(text.strip()) > 50:
 
-    return collection
+                            documents.append(
+                                text[:4000]
+                            )
 
-    client_db = chromadb.PersistentClient(
-        path="./db"
-    )
+                            ids.append(
+                                f"doc_{counter}"
+                            )
 
-    try:
+                            counter += 1
 
-        collection = client_db.get_collection(
-            name="npci_audit"
-        )
+                except Exception as e:
 
-    except:
+                    st.warning(
+                        f"Could not read {file}"
+                    )
 
-        collection = client_db.create_collection(
-            name="npci_audit"
-        )
+    # ---------------------------------------------------
+    # CREATE EMBEDDINGS
+    # ---------------------------------------------------
 
-        import os
-
-folder_path = "chunks"
-
-documents = []
-
-for file in os.listdir(folder_path):
-
-    if file.endswith(".txt"):
-
-        with open(
-            os.path.join(folder_path, file),
-            "r",
-            encoding="utf-8"
-        ) as f:
-
-            text = f.read()
-
-            documents.append(text[:4000])
+    if len(documents) > 0:
 
         embeddings = embedding_model.encode(
             documents
@@ -171,19 +179,20 @@ for file in os.listdir(folder_path):
         collection.add(
             documents=documents,
             embeddings=embeddings,
-            ids=[
-                f"doc{i+1}"
-                for i in range(len(documents))
-            ]
+            ids=ids
         )
 
     return collection
+
+# ---------------------------------------------------
+# LOAD COLLECTION
+# ---------------------------------------------------
 
 collection = load_collection()
 
-# -----------------------------------
+# ---------------------------------------------------
 # USER INPUT
-# -----------------------------------
+# ---------------------------------------------------
 
 query = st.text_input(
     "Enter Audit Control",
@@ -192,47 +201,63 @@ query = st.text_input(
 
 search = st.button("Search")
 
-# -----------------------------------
+# ---------------------------------------------------
 # SEARCH LOGIC
-# -----------------------------------
+# ---------------------------------------------------
 
 if search and query:
 
     with st.spinner("Searching regulations..."):
 
+        # ---------------------------------------------------
+        # QUERY EMBEDDING
+        # ---------------------------------------------------
+
         query_embedding = embedding_model.encode(
             query
         ).tolist()
 
+        # ---------------------------------------------------
+        # VECTOR SEARCH
+        # ---------------------------------------------------
+
         results = collection.query(
             query_embeddings=[query_embedding],
-            n_results=2
+            n_results=5
         )
 
         documents = results["documents"][0]
 
-        trimmed_docs = [
-            doc[:1500]
-            for doc in documents
-        ]
+        # ---------------------------------------------------
+        # TRIM DOCUMENTS
+        # ---------------------------------------------------
+
+        trimmed_docs = []
+
+        for doc in documents:
+
+            trimmed_docs.append(
+                doc[:1500]
+            )
 
         context = "\n\n".join(trimmed_docs)
 
-        # -----------------------------------
+        # ---------------------------------------------------
         # PROMPT
-        # -----------------------------------
+        # ---------------------------------------------------
 
         prompt = f"""
 You are an expert NPCI and RBI internal audit assistant.
 
 STRICT RULES:
-- Answer ONLY from provided excerpts.
-- Do NOT use outside knowledge.
-- Be highly structured.
-- Mention circular/policy number wherever possible.
-- Mention year if available.
-- Quote exact lines from policy.
-- Focus on internal audit testing.
+- Answer ONLY from provided excerpts
+- Do NOT hallucinate
+- Mention circular number wherever possible
+- Mention policy year wherever possible
+- Focus on internal audit testing
+- Be detailed and structured
+- Quote relevant policy lines
+- Mention evidence required
 
 USER QUERY:
 {query}
@@ -240,47 +265,49 @@ USER QUERY:
 REGULATORY EXCERPTS:
 {context}
 
-Generate output in EXACT format below:
+Generate response in EXACT structure below:
 
 # Applicable Policy / Circular
 
 Mention:
-- Policy/Circular Number
+- Circular Number
 - Year
 - Topic
 
 # What the Policy Says
 
-Summarize regulatory expectation in simple audit language.
+Summarize the regulatory expectation.
 
 # Areas to be Tested
 
-Provide specific internal audit testing areas.
+Mention detailed audit testing areas.
 
 # Audit Procedures / Fieldwork
 
-Provide detailed fieldwork steps.
+Provide audit procedures.
 
 # Evidence Required
 
-Mention exact evidence/documents/logs required.
+Mention logs, reports, screenshots, approvals,
+configurations, monitoring evidence, etc.
 
 # Direct Regulatory Quotes
 
-Quote exact lines from the provided excerpts.
-
-Mention:
-- Circular Number
-- Relevant clause
+Quote exact relevant lines.
 
 # Risk if Non-Compliant
 
-Mention operational, regulatory, compliance, fraud, and reputational risks.
+Mention:
+- Regulatory risk
+- Fraud risk
+- Compliance risk
+- Operational risk
+- Reputational risk
 """
 
-        # -----------------------------------
+        # ---------------------------------------------------
         # GROQ RESPONSE
-        # -----------------------------------
+        # ---------------------------------------------------
 
         response = client.chat.completions.create(
             model="llama-3.1-8b-instant",
@@ -294,17 +321,21 @@ Mention operational, regulatory, compliance, fraud, and reputational risks.
 
         answer = response.choices[0].message.content
 
-    # -----------------------------------
-    # DISPLAY
-    # -----------------------------------
+    # ---------------------------------------------------
+    # DISPLAY RESULTS
+    # ---------------------------------------------------
 
-    st.success("Relevant regulations identified")
+    st.success(
+        "Relevant regulations identified"
+    )
 
     st.subheader("AI Audit Response")
 
     st.markdown(answer)
 
-    st.subheader("Retrieved Regulatory Clauses")
+    st.subheader(
+        "Retrieved Regulatory Clauses"
+    )
 
     for i, doc in enumerate(trimmed_docs):
 

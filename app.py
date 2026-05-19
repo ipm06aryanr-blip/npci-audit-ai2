@@ -139,20 +139,41 @@ def load_collection():
 
                 try:
 
-                    with open(
-                        file_path,
-                        "r",
-                        encoding="utf-8"
-                    ) as f:
+            with open(
+    file_path,
+    "r",
+    encoding="utf-8"
+) as f:
 
-                        text = f.read()
+    text = f.read()
 
-                        # Skip empty docs
-                        if len(text.strip()) > 50:
+    if len(text.strip()) > 50:
 
-                            documents.append(
-                                text[:4000]
-                            )
+        # -----------------------------------
+        # EXTRACT METADATA FROM FILE NAME
+        # -----------------------------------
+
+        circular_name = file.replace(
+            ".txt",
+            ""
+        )
+
+        # -----------------------------------
+        # CREATE STRUCTURED DOCUMENT
+        # -----------------------------------
+
+        structured_text = f"""
+CIRCULAR: {circular_name}
+
+SOURCE FILE: {file}
+
+REGULATORY EXCERPT:
+{text[:1200]}
+"""
+
+        documents.append(
+            structured_text
+        )
 
                             ids.append(
                                 f"doc_{counter}"
@@ -223,7 +244,7 @@ if search and query:
 
         results = collection.query(
             query_embeddings=[query_embedding],
-            n_results=5
+            n_results=2
         )
 
         documents = results["documents"][0]
@@ -247,62 +268,46 @@ if search and query:
         # ---------------------------------------------------
 
         prompt = f"""
-You are an expert NPCI and RBI internal audit assistant.
+You are an NPCI regulatory audit assistant.
 
 STRICT RULES:
-- Answer ONLY from provided excerpts
-- Do NOT hallucinate
-- Mention circular number wherever possible
-- Mention policy year wherever possible
-- Focus on internal audit testing
-- Be detailed and structured
-- Quote relevant policy lines
-- Mention evidence required
+
+1. Use ONLY information explicitly present in retrieved excerpts.
+2. NEVER mention RBI policies unless explicitly written.
+3. NEVER invent circular numbers.
+4. NEVER invent years.
+5. NEVER infer missing controls.
+6. If information is unavailable, say:
+   "Not explicitly mentioned in retrieved excerpts."
 
 USER QUERY:
 {query}
 
-REGULATORY EXCERPTS:
+RETRIEVED EXCERPTS:
 {context}
 
-Generate response in EXACT structure below:
+TASK:
 
-# Applicable Policy / Circular
+1. Identify exact circulars retrieved.
+2. Explain ONLY what retrieved excerpts say.
+3. Mention audit testing areas ONLY from retrieved excerpts.
+4. Quote exact lines wherever possible.
+5. Mention evidence required.
+6. Mention missing information if unavailable.
 
-Mention:
-- Circular Number
-- Year
-- Topic
+FORMAT:
 
-# What the Policy Says
+# Retrieved Circulars
 
-Summarize the regulatory expectation.
+# Regulatory Requirement
 
-# Areas to be Tested
-
-Mention detailed audit testing areas.
-
-# Audit Procedures / Fieldwork
-
-Provide audit procedures.
+# Audit Testing Areas
 
 # Evidence Required
 
-Mention logs, reports, screenshots, approvals,
-configurations, monitoring evidence, etc.
+# Exact Regulatory Quotes
 
-# Direct Regulatory Quotes
-
-Quote exact relevant lines.
-
-# Risk if Non-Compliant
-
-Mention:
-- Regulatory risk
-- Fraud risk
-- Compliance risk
-- Operational risk
-- Reputational risk
+# Missing Information / Gaps
 """
 
         # ---------------------------------------------------

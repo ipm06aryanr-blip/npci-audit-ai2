@@ -218,6 +218,8 @@ if search and query:
         )
 
         documents = results["documents"][0]
+        st.write("DEBUG RETRIEVED DOCUMENTS")
+        st.write(documents)
 
         trimmed_docs = []
 

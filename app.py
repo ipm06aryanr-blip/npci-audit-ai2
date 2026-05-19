@@ -212,14 +212,69 @@ if search and query:
             query
         ).tolist()
 
-        results = collection.query(
-            query_embeddings=[query_embedding],
-            n_results=2
-        )
+        all_docs = collection.get()
 
+filtered_docs = []
+
+query_words = query.lower().split()
+
+for doc in all_docs["documents"]:
+
+    score = 0
+
+    doc_lower = doc.lower()
+
+    for word in query_words:
+
+        if word in doc_lower:
+
+            score += 1
+
+    if score >= 2:
+
+        filtered_docs.append(doc)
+
+# fallback if nothing found
+if len(filtered_docs) == 0:
+
+    filtered_docs = all_docs["documents"][:5]
+
+# semantic ranking
+doc_embeddings = embedding_model.encode(
+    filtered_docs
+).tolist()
+
+query_embedding = embedding_model.encode(
+    query
+).tolist()
+
+similarities = []
+
+for i, emb in enumerate(doc_embeddings):
+
+    similarity = sum(
+        [
+            a * b
+            for a, b in zip(query_embedding, emb)
+        ]
+    )
+
+    similarities.append(
+        (similarity, filtered_docs[i])
+    )
+
+similarities.sort(
+    reverse=True,
+    key=lambda x: x[0]
+)
+
+documents = [
+    x[1]
+    for x in similarities[:3]
+]
         documents = results["documents"][0]
         st.write("DEBUG RETRIEVED DOCUMENTS")
-        st.write(documents)
+       
 
         trimmed_docs = []
 

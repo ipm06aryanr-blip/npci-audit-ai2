@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+db/
+chunks/
+processed/
+*.pdf
+*.bin
+*.sqlite3
+.env

@@ -93,44 +93,36 @@ def load_collection():
             name="npci_audit"
         )
 
-        sample_docs = [
-            """
-            NPCI Circular UPI-OC-170 (2024)
+        import os
 
-            UPI Lite transactions must have proper transaction monitoring controls.
-            Banks and PSPs must maintain audit trails and reconciliation logs.
-            Mapper verification must be periodically validated.
-            Unauthorized mapper updates must be monitored and escalated.
-            """,
+folder_path = "chunks"
 
-            """
-            NPCI Circular UPI-OC-171 (2024)
+documents = []
 
-            TPAP applications must implement strong customer authentication.
-            Periodic risk reviews and fraud monitoring controls are mandatory.
-            Failed transaction logs must be retained for audit review.
-            """,
+for file in os.listdir(folder_path):
 
-            """
-            NPCI Circular UPI-OC-172 (2024)
+    if file.endswith(".txt"):
 
-            UPI Mapper controls should include validation checks, maker-checker approval,
-            reconciliation processes, and access control reviews.
-            Audit logs should be preserved for minimum retention period.
-            """
-        ]
+        with open(
+            os.path.join(folder_path, file),
+            "r",
+            encoding="utf-8"
+        ) as f:
+
+            text = f.read()
+
+            documents.append(text[:4000])
 
         embeddings = embedding_model.encode(
-            sample_docs
+            documents
         ).tolist()
 
         collection.add(
-            documents=sample_docs,
+            documents=documents,
             embeddings=embeddings,
             ids=[
-                "doc1",
-                "doc2",
-                "doc3"
+                f"doc{i+1}"
+                for i in range(len(documents))
             ]
         )
 
